@@ -1,0 +1,282 @@
+/* Hide the time gutter */
+.custom-calendar .rbc-time-gutter {
+  display: none;
+}
+
+.custom-calendar .rbc-row-content {
+  display: none;
+}
+
+.custom-calendar .rbc-time-header-gutter {
+  display: none;
+}
+
+.custom-calendar .rbc-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+
+.custom-calendar .rbc-toolbar-label {
+  font-size: 16px;
+  color: #1a73e8;
+}
+
+.custom-calendar .rbc-event {
+  background-color: #bbdefb !important;
+  color: #1a73e8 !important;
+  border-radius: 12px !important;
+  border: none !important;
+}
+
+.custom-calendar .rbc-event-content {
+  padding: 5px 10px;
+}
+
+.custom-calendar {
+  .rbc-calendar {
+    background-color: white;
+    border-radius: 12px;
+  }
+
+  .rbc-day-bg {
+    border-right: none;
+  }
+
+  .rbc-time-view .rbc-time-header {
+    border-bottom: none;
+  }
+
+  .rbc-timeslot-group {
+    border-top: none;
+  }
+
+  .rbc-time-header-cell {
+    border-right: none;
+  }
+
+  .rbc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f5f5f5;
+  }
+
+  .rbc-toolbar-label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .rbc-btn-group>button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .rbc-day-bg {
+    background-color: #f0f0f0;
+  }
+
+  .rbc-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+
+  .rbc-toolbar-label {
+    font-size: 1.2em;
+    margin: 0 10px;
+  }
+
+  .rbc-time-slot.hidden {
+    display: none !important;
+  }
+}
+
+
+/* Style for the calendar container */
+.custom-calendar {
+  position: relative;
+  height: 300px;
+  /* Initial height of the calendar */
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  padding: 0 30px;
+  padding-bottom: 70px;
+}
+
+/* Expand to full height when 'expanded' class is added */
+.custom-calendar.expanded {
+  height: 100%;
+}
+
+/* Button to show more schedules */
+.show-more-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Custom toolbar styles */
+.custom-calendar .custom-toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+/* Custom event display styles */
+.custom-calendar .custom-event {
+  background-color: #d8ddff;
+  color: #000000;
+  padding: 8px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.custom-calendar .custom-event.booked {
+  opacity: 0.7;
+}
+
+.custom-calendar .custom-event .blueDot {
+  width: 11px;
+  display: inline-block;
+  height: 11px;
+  background: #687EFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+/* Custom time slot placeholder */
+.custom-calendar .custom-time-slot {
+  text-align: center;
+  line-height: 30px;
+  color: #c5c6e0;
+  font-size: 27px;
+}
+
+.custom-calendar .rbc-time-content {
+  overflow: hidden;
+  border: none;
+}
+
+.custom-calendar .rbc-time-column .rbc-timeslot-group {
+  flex: 1;
+  border: none;
+}
+
+.custom-calendar .rbc-day-slot .rbc-events-container {
+  border: none;
+}
+
+.custom-calendar .rbc-header+.rbc-header {
+  border: none;
+}
+
+.custom-calendar .rbc-header {
+  border: none;
+  padding: 0;
+}
+
+.custom-calendar .rbc-time-view {
+  border: none;
+}
+
+.custom-calendar .rbc-event-label {
+  display: none;
+}
+
+.custom-calendar .rbc-day-slot .rbc-event {
+  background: none !important;
+  border: none !important;
+  padding: 5px;
+  height: 45px !important;
+  outline: none !important;
+}
+
+.custom-calendar .rbc-calendar {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.custom-calendar .custom-date-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+}
+
+.custom-calendar .custom-date-header .day-name {
+  font-family: "Rubik", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.custom-calendar .custom-date-header .month-name {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+}
+
+.custom-calendar .custom-date-header .day-date {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+}
+
+.custom-calendar .rbc-allday-cell {
+  display: none;
+}
+
+.custom-calendar .rbc-time-header.rbc-overflowing {
+  border-right: none !important;
+}
+
+.custom-calendar .rbc-time-header-content {
+  border-left: none !important;
+}
+
+.custom-calendar .rbc-day-slot .rbc-events-container {
+  margin-right: 0 !important;
+}
+
+.custom-toolbarBtn {
+  background: none;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 45px;
+}
+
+.custom-toolbarBtn.lft {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.custom-toolbarBtn.rgt {
+  position: absolute;
+  right: 8px;
+  top: 0px;
+}
+.custom-time-slot { height: 40px;}

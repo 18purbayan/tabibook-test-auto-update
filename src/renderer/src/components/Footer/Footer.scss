@@ -1,0 +1,124 @@
+.Footer {
+  background-image: url(../../assets/images/FooterBg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  padding: 70px 0 0px 0;
+  position: relative;
+}
+.Footer:after {
+  position: absolute;
+  width: 183px;
+  height: 195px;
+  content: "";
+  background-image: url(../../assets/images/Footer-Bottom-Graphic.png);
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: 0;
+}
+.FooterContainer {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.FooterTop {
+  width: 100%;
+  border-bottom: 1px solid #5153a7;
+  padding: 0 0 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.FooterTopLft h5 {
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.FooterTopLft p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 19px;
+  margin-bottom: 0 0 0 0;
+}
+.HelpBtn {
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+  width: 249px;
+  height: 68px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HelpBtn:hover {
+  background: linear-gradient(101.45deg, #4d8bf2 13.92%, #4ba9e9 71.82%);
+}
+.HelpBtn img {
+  margin-right: 10px;
+}
+.FooterBox {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.FooterBox1 h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.FooterBox1 ul {
+  margin-bottom: 35px;
+}
+.FooterBox1 ul li {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.FooterBox1 ul li a {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #c5c6e0;
+  text-decoration: none;
+}
+.FooterBox1 ul li a:hover {
+  color: #fff;
+}
+.FooterBottom {
+  width: 100%;
+  border-top: 1px solid #5153a7;
+  padding: 35px 0 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+}
+.FooterBottom h5 {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.socialicon ul {
+  display: flex;
+  gap: 20px;
+}

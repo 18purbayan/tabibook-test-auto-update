@@ -1,0 +1,113 @@
+.phone-number-edit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.phone-number-edit label {
+  width: 100%;
+  float: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #656288;
+  margin-bottom: 15px;
+}
+
+.phone-number-edit input {
+  width: 40%;
+  height: 65px;
+  box-shadow: 0px 10px 20px 0px rgba(174, 175, 226, 0.12);
+  border-radius: 40px;
+  border-radius: 40px;
+  border: 1px solid #fff;
+  padding: 0 25px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(107, 122, 139, 1);
+  outline: none;
+}
+
+.phone-number-edit div {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.phone-number-edit span {
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Add the styling for the editing state */
+.phone-number-old.editing {
+  height: 63px;
+  border: 1px solid #fff;
+  padding: 0 25px;
+  width: 40%;
+  box-shadow: 0 10px 20px rgba(174, 175, 226, 0.12);
+  border-radius: 40px;
+  background: #fff;
+  background-image: url(../assets/images/tickGreen.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6b7a8b;
+  line-height: 63px;
+}
+
+.phone-number-old.editing span {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6b7a8b;
+}
+
+.phone-number-edit button {
+  padding: 0;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  float: left;
+  width: 250px;
+  text-align: center;
+  height: 53px;
+  line-height: 53px;
+  margin-top: 20px;
+}
+.phone-number-edit button {
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+  border: #687eff 1px solid;
+  margin-right: 14px;
+}
+.phone-number-edit button:hover {
+  background: linear-gradient(101.45deg, #4d8bf2 13.92%, #4ba9e9 71.82%);
+}
+
+.phone-number-edit .EditBtngrp button {
+  margin-top: 0px;
+}
+
+.phone-number-edit .EditBtngrp button.cancelBtn {
+  width: 133px;
+  background: #000000;
+  border: 1px solid #000;
+}
+
+.phone-number-edit label.editing-label {
+  color: #000;
+}
+
+.phone-number-edit input:focus {
+  border-color: rgba(75, 168, 233, 1);
+}

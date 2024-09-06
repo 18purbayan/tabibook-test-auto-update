@@ -1,0 +1,5886 @@
+// Saheb's css start
+
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.rightSec {
+  width: calc(100% - 223px);
+  float: left;
+}
+.doctormain .mainDiv {
+  margin: 0;
+  padding: 26px 30px 26px 40px;
+  width: 100%;
+}
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-clear-button {
+  display: none;
+  -webkit-appearance: none;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  -webkit-appearance: none;
+  display: none;
+}
+input[type="time"]::-moz-focus-inner {
+  border: 0;
+}
+input[type="time"]::-moz-clear {
+  display: none;
+}
+
+/*====================================Sidebar Starts====================================*/
+.doctormain {
+  width: 100%;
+  float: left;
+  display: flex;
+}
+.sideMain {
+  width: 222px;
+  float: left;
+}
+.sidebarDiv {
+  width: 222px;
+  height: 100vh;
+  float: left;
+  background: #fff;
+  border-right: #eaeef1 1px solid;
+  position: fixed;
+}
+.logoSide {
+  border: #eaeef1 1px solid;
+  padding: 34px 10px 28px 12px;
+}
+.sidebarList {
+  width: 100%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.sidebarList li {
+  width: 100%;
+  float: left;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: #8f8da6;
+  line-height: 18px;
+}
+.sidebarList li a {
+  color: #8f8da6;
+  background: url("assets/images/chev-right.svg") center right 12px no-repeat;
+  text-decoration: none;
+  padding: 18px 12px;
+  display: flex;
+  border-left: #687fff00 6px solid;
+}
+.sidebarList li .iconDiv {
+  width: 30px;
+  float: left;
+  position: relative;
+  top: 1px;
+  text-align: center;
+  margin-right: 5px;
+}
+.sidebarList li.active a {
+  background: #f0f2ff;
+  color: #687eff;
+  border-left: #687eff 6px solid;
+}
+.sidebarList li.active .iconDiv {
+  filter: invert(40%) sepia(80%) saturate(500%) hue-rotate(190deg);
+}
+.sidebarList li:hover {
+  background: #f0f2ff;
+}
+.sidebarList li:hover a {
+  color: #687eff;
+  border-left: #687eff 6px solid;
+}
+.sidebarList li:hover .iconDiv {
+  filter: invert(40%) sepia(80%) saturate(500%) hue-rotate(190deg);
+}
+.sidebarList li.doctorLogout {
+  position: absolute;
+  bottom: 0;
+}
+.sidebarList li.doctorLogout a {
+  color: #f04b55;
+  background: none;
+}
+.sidebarList li.doctorLogout:hover a {
+  color: #f04b55;
+  background: #f0f2ff;
+  border-left: #f04b55 6px solid;
+}
+.sidebarList li.doctorLogout:hover .iconDiv {
+  filter: none;
+}
+/*====================================Sidebar Ends====================================*/
+
+/*====================================Dashboard Starts====================================*/
+.hdnDiv {
+  width: 100%;
+  float: left;
+}
+.hdnDiv h2 {
+  width: 100%;
+  float: left;
+  font: 500 28px/34px "Montserrat", sans-serif;
+  color: #000;
+  margin: 0 0 8px;
+}
+.hdnDiv h2 img {
+  float: left;
+  position: relative;
+  top: -6px;
+  margin-right: 10px;
+}
+.hdnDiv p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #656288;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+.dashSlider {
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.dashItem {
+  width: 92% !important;
+  background: #fff;
+  border: #eaeef1 1px solid;
+  border-radius: 12px;
+}
+.dashItem h2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 0;
+  font-family: "Rubik", sans-serif;
+}
+.dashItem h2 img {
+  margin-right: 18px;
+}
+.dashItem h3 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #000;
+  margin: 20px 0 0 0;
+  padding: 0 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.dashSlider .slick-prev {
+  width: 85px;
+  height: 88px;
+  background: url("assets/images/prev-btn.svg") 0 0 no-repeat !important;
+  text-indent: -9999px;
+  z-index: 99;
+  left: -40px;
+  top: 54%;
+}
+.dashSlider .slick-next {
+  width: 85px;
+  height: 88px;
+  background: url("assets/images/next-btn.svg") 0 0 no-repeat !important;
+  text-indent: -9999px;
+  z-index: 99;
+  right: -8px;
+  top: 54%;
+}
+.dashSlider .slick-disabled {
+  display: none !important;
+}
+.dashItem h3 span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #656288;
+  padding: 0 0 0 24px;
+}
+.dashItem h3 .blueItem {
+  background: url("assets/images/arrow-icon.svg") 0 center no-repeat;
+}
+.dashItem h3 .blueItem strong {
+  font-weight: 400;
+  color: #687eff;
+}
+.dashItem h3 .plusItem {
+  background: url("assets/images/arrow-icon2.svg") 0 center no-repeat;
+}
+.dashItem h3 .plusItem strong {
+  font-weight: 400;
+  color: #04c000;
+}
+.dashItem h3 .minussItem {
+  background: url("assets/images/arrow-icon3.svg") 0 center no-repeat;
+}
+.dashItem h3 .minussItem strong {
+  font-weight: 400;
+  color: #f04b55;
+}
+
+.dashFoot {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+.upcomingAppoinment {
+  width: 100%;
+  float: left;
+  background: #fff;
+  border: #eaeef1 1px solid;
+  border-radius: 12px;
+}
+.upcomingAppoinment h2 {
+  font: 500 20px/24px "Montserrat", sans-serif;
+  padding: 18px 25px;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #eaeef1 1px solid;
+}
+.upcomingAppoinment h2 a {
+  font: 600 15px/18px "Montserrat", sans-serif;
+  color: #687eff;
+}
+
+.searchFilter {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 25px 25px;
+}
+.searchFilter .searchInput {
+  width: 320px;
+  height: 44px;
+  border: 1px solid #eaeef1;
+  border-radius: 4px;
+  padding: 0 20px 0 55px;
+  background: rgba(235, 235, 245, 0.3) url("assets/images/search-icon.svg") 20px center no-repeat;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6b7a8b;
+  border-radius: 8px;
+  outline: none !important;
+  font-family: "Rubik", sans-serif;
+  border: #687fff00 1px solid;
+}
+.searchFilter .searchInput:focus {
+  border: #687eff 1px solid;
+}
+.searchFilter .calendarFilter {
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+}
+.searchFilter .calendarFilter input {
+  width: 110px;
+  height: 44px;
+  border: 1px solid #eaeef1;
+  border-radius: 4px;
+  padding: 0 10px 0 50px;
+  background: rgba(235, 235, 245, 0.3) url("assets/images/calendar-icon.svg") 20px center no-repeat;
+  font-weight: 400;
+  color: #6b7a8b;
+  border-radius: 8px;
+  outline: none !important;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.appoList {
+  overflow-x: auto;
+  height: 400px;
+  margin: 0 15px 0 25px;
+}
+.appoList table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.appoList thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+}
+.appoList td {
+  padding: 15px 0;
+  text-align: left;
+  border-bottom: 1px solid #eaeef1;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #656288;
+}
+.appoList th {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  text-align: left;
+  padding: 15px 0;
+  border-bottom: 1px solid #eaeef1;
+}
+.appoList .appoName {
+  color: #000;
+}
+.appoList .badge {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 3px;
+  padding: 2px 10px 3px;
+}
+.appoList .badge.cabinet {
+  color: #687eff;
+  border: #687eff 1px solid;
+  background: #f0f2ff;
+}
+.appoList .badge.video {
+  color: #5fb75e;
+  border: #5fb75e 1px solid;
+  background: #effaef;
+}
+
+.appoList::-webkit-scrollbar {
+  width: 9px;
+  margin-right: 10px;
+}
+.appoList::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f5f5fb;
+}
+.appoList::-webkit-scrollbar-thumb {
+  background: #687eff;
+  border-radius: 10px;
+}
+.appoList::-webkit-scrollbar-thumb:hover {
+  background: #687eff;
+}
+.searchFilter .react-datepicker-popper .react-datepicker {
+  font-family: "Rubik", sans-serif;
+  border: 1px solid #687eff;
+}
+.searchFilter .react-datepicker__header {
+  background-color: #687eff !important;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+}
+.searchFilter .react-datepicker__header select {
+  margin: 0 35px;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  background: #fff;
+  padding: 3px 0;
+  margin: -9px 0 -8px 35px;
+  outline: none !important;
+}
+.searchFilter .react-datepicker__header button {
+  color: #fff;
+  background: none;
+  border: none;
+  margin: 0 5px;
+  position: relative;
+  top: 0;
+}
+.searchFilter .react-datepicker__month-text {
+  padding: 5px 0;
+  margin: 0 0 5px;
+}
+.searchFilter .react-datepicker__month-text--keyboard-selected {
+  background-color: #687eff;
+  color: #fff;
+}
+.searchFilter .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle {
+  fill: #687eff;
+  color: #687eff;
+}
+
+.messageDiv {
+  width: 470px;
+  margin-left: 40px;
+}
+.messageList {
+  width: 100%;
+  float: left;
+  height: 491px;
+  margin: 0;
+}
+.messageList ul {
+  padding: 0 25px;
+  margin: 0;
+}
+.messageList ul li {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: #ccd6dd 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.messageList ul li .msgLft {
+  display: flex;
+  align-items: center;
+}
+.messageList ul li .messagePic img {
+  width: 43px;
+  height: 43px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.messageList ul li .messageName h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0 2px;
+}
+.messageList ul li .messageName p {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7a8b;
+}
+.msgRgt p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: #6b7a8b;
+  margin: 0 0 3px 0;
+}
+.msgRgt h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background: #687eff;
+  width: 24px;
+  height: 24px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*====================================Dashboard Ends====================================*/
+
+/*====================================My Account Starts====================================*/
+.accountHdn {
+  display: flex;
+}
+.accountHdn button {
+  width: 230px;
+  height: 55px;
+  border-radius: 50px;
+  background: #687eff;
+  text-align: center;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 55px;
+  color: #fff;
+  cursor: pointer;
+}
+.accountProfile {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+  border-bottom: #dddde8 1px solid;
+  margin-bottom: 55px;
+  padding-bottom: 55px;
+}
+.profile-picture-upload {
+  display: flex;
+  align-items: center;
+}
+.profile-picture-upload h3 {
+  width: 100%;
+  float: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 12px;
+}
+.profile-picture {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  color: #aaa;
+  font-size: 14px;
+}
+.upload-image-btn,
+.remove-image-btn {
+  padding: 10px 32px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  float: left;
+}
+.upload-image-btn {
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+  border: #687eff 1px solid;
+  margin-right: 14px;
+}
+.remove-image-btn {
+  background-color: #fff;
+  color: #000;
+  border: #c5c6e0 1px solid;
+}
+.profile-picture-upload p {
+  width: 100%;
+  float: left;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #656288;
+  margin-top: 15px;
+}
+
+.accountDetails {
+  width: 100%;
+  float: left;
+  margin: 0 0 40px;
+}
+.accountDetails li {
+  width: 42%;
+  float: left;
+  margin-right: 4%;
+  margin-bottom: 45px;
+}
+.accountDetails li label {
+  width: 100%;
+  float: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #656288;
+  margin-bottom: 8px;
+}
+.accountDetails li input {
+  width: 90%;
+  float: left;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  border: #ccd6dd00 1px solid;
+  padding: 0;
+  box-shadow: 0 10px 20px rgba(174, 175, 226, 0);
+  outline: none !important;
+  background: none;
+}
+.accountDetails.editing li label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+.accountDetails.editing li input {
+  height: 63px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6b7a8b;
+  border: #ccd6dd 1px solid;
+  padding: 0 5%;
+  box-shadow: 0 10px 20px rgba(174, 175, 226, 0.12);
+  border-radius: 30px;
+  background: #fff;
+}
+.accountDetails.editing li input:focus {
+  border: #687eff 1px solid;
+}
+/*====================================My Account Ends====================================*/
+
+/*====================================Set Availability Starts====================================*/
+.setMain {
+  width: 70%;
+  float: left;
+  border-right: #eaeef1 1px solid;
+}
+.avalabilityDiv {
+  padding: 45px 30px;
+}
+.avalabilityDiv h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 15px;
+}
+.avalabilityDiv h3.setTmeLabel {
+  margin-bottom: 0;
+}
+.avalabilityDiv .avalabilityForm {
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+.avalabilityDiv .avalabilityForm li {
+  width: 100%;
+  float: left;
+  margin-top: 14px;
+  border-bottom: #eaeef1 1px solid;
+  padding-bottom: 8px;
+  margin-bottom: 0;
+}
+.avalabilityDiv .avalabilityForm li .addList {
+  width: 100%;
+  float: left;
+  margin-top: 14px;
+}
+.avalabilityDiv .avalabilityForm li span {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+}
+.avalabilityDiv .avalabilityForm li input[type="checkbox"] {
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
+  position: relative;
+  top: 7px;
+}
+.avalabilityDiv .avalabilityForm li label {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #656288;
+  margin-right: 20px;
+}
+.avalabilityDiv .avalabilityForm li input[type="time"],
+.avalabilityDiv .avalabilityForm li input[type="text"] {
+  width: 135px;
+  height: 55px;
+  margin-right: 5px;
+  border: #eaeef1 1px solid;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 30px;
+  text-align: center;
+  padding: 0 10px;
+  outline: none !important;
+  margin-right: 20px;
+  appearance: none;
+}
+.avalabilityDiv .avalabilityForm li input[type="time"]:disabled,
+.avalabilityDiv .avalabilityForm li input[type="text"]:disabled {
+  background: none;
+  border: none;
+}
+.avalabilityDiv .avalabilityForm li button {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  background: #687eff url("assets/images/plus-icon.svg") 18px 9px no-repeat;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 25px 10px 45px;
+  cursor: pointer;
+}
+.avalabilityDiv .avalabilityForm li .loopSlot {
+  margin-top: 14px;
+}
+.avalabilityDiv .avalabilityForm li .loopSlot.loopDisable {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+.avalabilityDiv .avalabilityForm li .loopSlot button {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #656288;
+  background: #f0f2ff url("assets/images/remove-btn.svg") 21px 11px no-repeat;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 21px 10px 45px;
+  cursor: pointer;
+}
+.avalabilityDiv .avalabilityForm li .addList button:disabled {
+  display: none;
+}
+.avalabilityDiv .avalabilityForm li label.tmeLabel {
+  width: 250px;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  float: left;
+  margin: 18px 40px 0 0;
+}
+.avalabilityDiv .avalabilityForm li select {
+  width: 129px;
+  height: 55px;
+  margin-right: 5px;
+  border: #eaeef1 1px solid;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 30px;
+  padding: 0 20px;
+  outline: none !important;
+  appearance: none;
+  background: url("assets/images/chev-bottom.svg") right 20px center no-repeat;
+}
+.avalabilityDiv .avalabilityForm li select:disabled {
+  width: auto;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 10px;
+}
+.avalabilityDiv .avalabilityForm li .saveBtn {
+  width: 133px;
+  height: 53px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin-top: 30px;
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+}
+.avalabilityDiv .avalabilityForm li .saveBtn:disabled {
+  background: #f2f2ff;
+  color: #c5c6e0;
+}
+.avalabilityDiv .avalabilityForm li:last-child {
+  border-bottom: none;
+}
+
+.setRight {
+  width: 28%;
+  float: right;
+  text-align: center;
+}
+.setRight .speceficBtn {
+  width: 301px;
+  height: 53px;
+  background: #687eff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  border-radius: 30px;
+  color: #fff;
+  border: none;
+  margin-bottom: 17px;
+  cursor: pointer;
+}
+.setRight .holidayBtn {
+  width: 301px;
+  height: 53px;
+  background: #eb7f00;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  border-radius: 30px;
+  color: #fff;
+  border: none;
+  margin-bottom: 17px;
+  cursor: pointer;
+}
+.setRight .editBtn {
+  width: 301px;
+  height: 53px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  border-radius: 30px;
+  color: #fff;
+  border: none;
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+  display: inline-block;
+  cursor: pointer;
+}
+.setRight .editBtn:disabled {
+  display: none;
+}
+.avalabilityDiv .avalabilityForm.loopDisable li input[type="time"] {
+  background: none;
+  border: none;
+}
+.avalabilityDiv .avalabilityForm.loopDisable .tmeSlot input[type="time"] {
+  width: auto;
+  margin-right: 0;
+}
+
+/* Holiday Popup Starts */
+.holidayPopup.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  backdrop-filter: blur(2px);
+}
+.holidayPopup .popup-content {
+  background: white;
+  padding: 35px 40px 50px;
+  border-radius: 20px;
+  position: relative;
+}
+.holidayPopup .popup-content .popupInner {
+  display: flex;
+}
+.holidayPopup .calendar-section h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin: 0 0 15px;
+}
+.holidayPopup .calendar-section {
+  flex: 1;
+  width: 410px;
+  position: relative;
+}
+.holidayPopup .calendar-section .react-calendar {
+  border: none;
+}
+.holidayPopup .highlighted-date {
+  background-color: #687eff !important;
+  color: #fff !important;
+  border-radius: 30px;
+}
+.holidayPopup .react-calendar__month-view__weekdays {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8e8c9a;
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.holidayPopup .react-calendar__month-view__weekdays abbr[title] {
+  text-decoration: none;
+}
+.holidayPopup .react-calendar__month-view__weekdays__weekday {
+  flex: auto !important;
+}
+.holidayPopup .react-calendar__month-view__days {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+.holidayPopup .react-calendar__month-view__days button {
+  width: 48px;
+  height: 48px;
+  background: none;
+  border: none;
+  border-radius: 30px;
+  flex: auto !important;
+  margin: auto;
+  margin-inline-end: auto !important;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #232020;
+  cursor: pointer;
+}
+.holidayPopup .react-calendar__month-view__days button:disabled {
+  color: #cac7c7;
+}
+.holidayPopup .react-calendar__month-view__days button.react-calendar__tile--now {
+  color: #687eff;
+}
+.holidayPopup .react-calendar__navigation {
+  display: flex;
+  margin-bottom: 20px;
+}
+.holidayPopup .react-calendar__navigation button {
+  border: none;
+  background: none;
+}
+.holidayPopup .react-calendar__navigation__arrow {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #232020;
+  position: relative;
+  top: -3px;
+  background: none !important;
+  cursor: pointer;
+}
+.holidayPopup .react-calendar__navigation__label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+.holidayPopup .react-calendar__month-view__days button.react-calendar__month-view__days__day--neighboringMonth {
+  color: #cac7c7;
+}
+.holidayPopup .react-calendar__navigation__prev2-button {
+  display: none;
+}
+.holidayPopup .react-calendar__navigation__next2-button {
+  display: none;
+}
+
+.selected-dates {
+  width: 410px;
+  float: right;
+  margin-left: 85px;
+  margin-top: 50px;
+}
+.selected-dates .NoHolidayDiv {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  width: 46%;
+  text-align: center;
+}
+.selected-dates ul {
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-x: auto;
+}
+.selected-dates ul li {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  background: #f0f2ff;
+  padding: 8px 14px 8px 14px;
+  margin-right: 10px;
+  float: left;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.selected-dates ul li button {
+  border: none;
+  background: none;
+  margin-left: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.selected-dates ul::-webkit-scrollbar {
+  width: 9px;
+  margin-right: 10px;
+}
+.selected-dates ul::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f5f5fb;
+}
+.selected-dates ul::-webkit-scrollbar-thumb {
+  background: #687eff;
+  border-radius: 10px;
+}
+.selected-dates ul::-webkit-scrollbar-thumb:hover {
+  background: #687eff;
+}
+.holidayPopup.popup .cancelBtn {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.overlayBtn {
+  width: 388px;
+  height: 50px;
+  position: absolute;
+  left: 11px;
+}
+.saveBtn2 {
+  width: 133px;
+  height: 53px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin-top: 30px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+}
+/* Holiday Popup Ends */
+
+.speceficPopup .popup-content {
+  padding-bottom: 0;
+}
+.specific-date-slots {
+  width: 100%;
+  float: left;
+  margin-left: 50px;
+}
+.specific-date-slots .avalabilityDiv {
+  padding: 0;
+  border: none;
+}
+.notAvailable {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: #eaeef1 1px solid;
+  color: #000;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+.notAvailable input[type="checkbox"] {
+  position: relative;
+  top: 1px;
+}
+.speceficPopup .react-calendar__tile--active {
+  background-color: #687eff !important;
+  color: #fff !important;
+}
+.speceficPopup.holidayPopup .react-calendar__month-view__days {
+  gap: 5px;
+}
+.speceficPopup.holidayPopup .avalabilityDiv h3 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.speceficPopup.holidayPopup .react-calendar__month-view__days {
+  gap: 5px;
+}
+.speceficPopup.holidayPopup .avalabilityDiv .avalabilityForm li {
+  float: none;
+  width: auto;
+  border: none;
+}
+.speceficPopup.holidayPopup .avalabilityDiv .avalabilityForm li .addList button:disabled {
+  display: inline-block;
+}
+.speceficPopup.holidayPopup .CloneDiv {
+  margin-bottom: 14px;
+}
+.dateAddList {
+  height: 130px;
+  overflow-x: auto;
+}
+.dateAddList::-webkit-scrollbar {
+  width: 9px;
+  margin-right: 10px;
+}
+.dateAddList::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f5f5fb;
+}
+.dateAddList::-webkit-scrollbar-thumb {
+  background: #687eff;
+  border-radius: 10px;
+}
+.dateAddList::-webkit-scrollbar-thumb:hover {
+  background: #687eff;
+}
+
+.inputOverlay {
+  width: 25px;
+  height: 42px;
+  position: absolute;
+  background: #fff;
+  top: 7px;
+  right: 33px;
+}
+.cloneTime {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.cloneLoop2 input[type="time"] {
+  padding: 0 0 0 35px !important;
+}
+.cloneLoop2 {
+  position: relative;
+}
+
+/*====================================Set Availability Ends====================================*/
+
+/*====================================Nurse Starts====================================*/
+.nurseTop h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nurseTop h2 span {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nurseTop h2 strong {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #656288;
+  margin-left: 40px;
+}
+.nurseTop h2 img {
+  top: 3px;
+}
+.addSection {
+  width: 100%;
+  float: left;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0;
+}
+.addSection .addBtn {
+  width: 301px;
+  height: 53px;
+  background: #687eff;
+  border-radius: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  color: #fff;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.addBtn2 {
+  width: 301px;
+  height: 53px;
+  background: #687eff;
+  border-radius: 50px;
+  font-family: "Rubik", sans-serif;
+  line-height: 53px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  color: #fff;
+  margin-top: 0;
+  cursor: pointer;
+  text-align: center;
+}
+.nurseHdn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #000;
+  border-bottom: #ccd6dd 1px solid;
+  padding-bottom: 20px;
+}
+.addNursePopup ul {
+  width: 534px;
+  padding: 0;
+  margin: 28px 0 0 0;
+}
+.addNursePopup ul li {
+  width: 100%;
+  float: left;
+  margin: 0 0 20px;
+}
+.addNursePopup ul li label {
+  width: 100%;
+  float: left;
+  margin: 0 0 15px;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+}
+.addNursePopup ul li input[type="text"] {
+  width: 90%;
+  float: left;
+  margin: 0;
+  border: #ccd6dd 1px solid;
+  height: 59px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6b7a8b;
+  border-radius: 30px;
+  padding: 0 5%;
+  outline: none !important;
+}
+.addNursePopup ul li input[type="text"]:focus {
+  border: #687eff 1px solid;
+}
+
+.addNursePopup ul li input[type="password"] {
+  width: 90%;
+  float: left;
+  margin: 0;
+  border: #ccd6dd 1px solid;
+  height: 59px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6b7a8b;
+  border-radius: 30px;
+  padding: 0 5%;
+  outline: none !important;
+}
+.addNursePopup ul li input[type="password"]:focus {
+  border: #687eff 1px solid;
+}
+
+.addNursePopup ul li input[type="email"] {
+  width: 90%;
+  float: left;
+  margin: 0;
+  border: #ccd6dd 1px solid;
+  height: 59px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6b7a8b;
+  border-radius: 30px;
+  padding: 0 5%;
+  outline: none !important;
+}
+.addNursePopup ul li input[type="email"]:focus {
+  border: #687eff 1px solid;
+}
+.addNursePopup ul li select {
+  width: 100%;
+  float: left;
+  margin: 0;
+  border: #ccd6dd 1px solid;
+  height: 59px;
+  appearance: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6b7a8b;
+  border-radius: 30px;
+  padding: 0 5%;
+  outline: none !important;
+  background: url("assets/images/chev-bottom.svg") right 20px center no-repeat;
+  -webkit-appearance: none;
+}
+.addNursePopup ul li select:focus {
+  border: #687eff 1px solid;
+}
+
+.addNursePopup ul li button {
+  width: 100%;
+  height: 59px;
+  border-radius: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  color: #fff;
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+  cursor: pointer;
+}
+.addNursePopup ul li:last-child {
+  text-align: center;
+  margin: 0;
+}
+.nurseList {
+  width: 100%;
+  float: left;
+  margin: 10px 0 0;
+}
+.nurseList .appoList {
+  height: 62vh;
+}
+.nurseList th {
+  font-weight: 500;
+  font-size: 16px;
+}
+.nurseList .appoName {
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.nurseList .appoName img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  margin-right: 8px;
+}
+.nurseList .viewLink {
+  margin: 0 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.removeHdn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.holidayPopup .popup-content.removePop {
+  padding: 26px 30px 50px;
+  width: 417px;
+}
+.removeNurse {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin-top: 25px;
+}
+.removeNurse img {
+  width: 58px;
+  height: 58px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+.removeNurse h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  line-height: 28px;
+}
+.removeNurse h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  line-height: 28px;
+}
+.removeNurse h4 span {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #656288;
+}
+.nurseBtns {
+  width: 100%;
+  float: left;
+  margin-top: 25px;
+}
+.nurseBtns .yesBtn {
+  width: 161px;
+  height: 53px;
+  border-radius: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  color: #fff;
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+  cursor: pointer;
+  border: #c5c6e000 1px solid;
+  margin: 0 5px;
+}
+.nurseBtns .noBtn {
+  width: 161px;
+  height: 53px;
+  border-radius: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: #c5c6e0 1px solid;
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+  margin: 0 5px;
+}
+/*====================================Nurse Ends====================================*/
+
+/*====================================Appointment Starts====================================*/
+.hdnDiv p.videoConsult {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #656288;
+  margin-right: 25px;
+}
+.hdnDiv p.videoConsult::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #5fb75e;
+  border-radius: 30px;
+  position: relative;
+  left: -5px;
+  position: relative;
+  display: inline-block;
+}
+.hdnDiv p.cabinetConsult {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #656288;
+}
+.hdnDiv p.cabinetConsult::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #687eff;
+  border-radius: 30px;
+  position: relative;
+  left: -5px;
+  position: relative;
+  display: inline-block;
+}
+
+.filters {
+  float: left;
+  justify-content: center;
+  border-radius: 3px;
+  border: #eaeef1 1px solid;
+}
+.filters button {
+  padding: 8px 20px;
+  margin: 0;
+  border: #eaeef100 1px solid;
+  background: #fff;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  border-right: #eaeef1 1px solid;
+}
+.filters button:nth-child(1) {
+  border-radius: 3px 0 0 3px;
+}
+.filters button:nth-child(2) {
+  border-right: #eaeef1 1px solid;
+}
+.filters button:nth-child(3) {
+  border-radius: 0 3px 3px 0;
+}
+.filters button.active {
+  background: #687eff;
+  color: #fff;
+}
+.videoConsult {
+  color: #4caf50;
+  margin-right: 10px;
+}
+.cabinetConsult {
+  color: #3f51b5;
+}
+.rbc-calendar {
+  width: 100%;
+  float: left;
+}
+.appointmentFoot .rbc-time-view {
+  border: none;
+}
+.appointmentFoot .rbc-toolbar {
+  display: block;
+  margin-bottom: 28px;
+  width: 268px;
+  position: relative;
+  z-index: 99;
+}
+.rbc-toolbar .prevBtn {
+  background: url("assets/images/prev-btn2.svg") 0 0 no-repeat;
+  border: none;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin-top: -7px;
+  cursor: pointer;
+}
+.rbc-toolbar .nextBtn {
+  background: url("assets/images/next-btn2.svg") 0 0 no-repeat;
+  border: none;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin-top: -7px;
+  cursor: pointer;
+}
+.rbc-toolbar .rbc-toolbar-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+.rbc-time-slot {
+  font-family: "Rubik", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background: #fff;
+  min-height: 55px;
+}
+.rbc-day-slot .rbc-event,
+.rbc-day-slot .rbc-background-event {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  left: 0% !important;
+  width: 100% !important;
+  min-height: 28px !important;
+}
+.rbc-day-slot .rbc-event span,
+.rbc-day-slot .rbc-background-event span {
+  font-size: 14px;
+  font-weight: 400;
+}
+.rbc-day-slot .rbc-event-label {
+  font-size: 12px;
+}
+
+.appointmentFoot .freeDiv {
+  background: rgba(174, 175, 226, 0.12) url("assets/images/free-icon.svg") 10px center no-repeat;
+  padding: 0 0 0 37px;
+  border: 1px solid #fff !important;
+  border-left: #c5c6e0 4px solid !important;
+  flex-flow: unset !important;
+  align-items: center !important;
+}
+.appointmentFoot .videoDiv {
+  background: rgba(239, 250, 239, 1) url("assets/images/video-icon.svg") 11px center no-repeat;
+  padding: 0 0 0 36px;
+  border: 1px solid #fff !important;
+  border-left: #5fb75e 4px solid !important;
+  flex-flow: unset !important;
+  align-items: center !important;
+  color: #5fb75e;
+}
+.appointmentFoot .cabinetDiv {
+  background: rgba(240, 242, 255, 1) url("assets/images/cabinet-icon.svg") 11px center no-repeat;
+  padding: 0 0 0 36px;
+  border: 1px solid #fff !important;
+  border-left: #687eff 4px solid !important;
+  flex-flow: unset !important;
+  align-items: center !important;
+  color: #5087fa;
+}
+.appointmentFoot .event-checkbox {
+  position: relative;
+  top: 5px;
+}
+.appointmentFoot .rbc-calendar {
+  height: 431px !important;
+}
+.appointmentFoot .rbc-time-content::-webkit-scrollbar {
+  width: 9px;
+  margin-right: 10px;
+}
+.appointmentFoot .rbc-time-content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f5f5fb;
+}
+.appointmentFoot .rbc-time-content::-webkit-scrollbar-thumb {
+  background: #687eff;
+  border-radius: 10px;
+}
+.appointmentFoot .rbc-time-content::-webkit-scrollbar-thumb:hover {
+  background: #687eff;
+}
+
+.appointmentFoot .rbc-time-content > * + * > * {
+  border-left: #eaeef1 1px solid;
+}
+.appointmentFoot .rbc-timeslot-group {
+  min-height: 55px;
+  border-bottom: #eaeef1 1px solid;
+}
+.rbc-day-slot .rbc-event-content {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.appointmentFoot .rbc-time-header.rbc-overflowing {
+  border-right: #eaeef1 1px solid;
+  border-bottom: #eaeef1 1px solid;
+}
+.appointmentFoot .rbc-day-slot .rbc-events-container {
+  margin-right: 0;
+  border-right: 1px solid #eaeef1;
+}
+.rbc-timeslot-group .rbc-day-slot {
+  background: #fff;
+}
+.appointmentFoot .rbc-time-content {
+  padding-right: 20px;
+  border-top: none;
+}
+.appointmentFoot .freeDiv.rbc-selected {
+  background: rgba(174, 175, 226, 0.12) url("assets/images/free-icon.svg") 10px center no-repeat;
+}
+.appointmentFoot .videoDiv.rbc-selected {
+  background: rgba(239, 250, 239, 1) url("assets/images/video-icon.svg") 11px center no-repeat;
+}
+.appointmentFoot .cabinetDiv.rbc-selected {
+  background: rgba(240, 242, 255, 1) url("assets/images/cabinet-icon.svg") 11px center no-repeat;
+}
+.day-view .rbc-time-header {
+  background: #fff;
+  margin-right: 30px !important;
+  padding-left: 0;
+  align-items: center;
+}
+.day-view .rbc-row-content {
+  background: #fff;
+  margin-right: 0;
+}
+.day-view .rbc-time-header-gutter {
+  display: flex;
+  justify-content: center;
+  margin-right: 0 !important;
+  align-items: center;
+  font-weight: 500;
+}
+.day-view .rbc-time-header-gutter .rbc-time-header {
+  margin-right: 0 !important;
+}
+.rbc-day-slot .rbc-event {
+  outline: none !important;
+}
+.day-view .rbc-event-continues-after {
+  display: none;
+}
+.day-view .rbc-time-header-content {
+  border-left: 1px solid #eaeef1;
+}
+.freeDiv .rbc-event-content {
+  display: none;
+}
+.rbc-current-time-indicator {
+  display: none;
+}
+.rbc-current-time-slot {
+  background-color: #687eff !important;
+  color: #fff !important;
+}
+.absentBtn {
+  background: #f04b55;
+  width: 152px;
+  height: 35px;
+  border-radius: 30px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  left: 30px;
+  position: relative;
+}
+.absentBtn:disabled {
+  background: #fff;
+  color: #000000;
+}
+.absentTxt {
+  background: #ccd6dd;
+  color: #000;
+  border-radius: 6px;
+  padding: 3px 8px 4px;
+  margin: 0 8px;
+  position: relative;
+  top: 2px;
+}
+.rgtColumn {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+}
+.listViewDiv {
+  display: flex;
+  color: #656288;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  align-items: center;
+  justify-content: flex-end;
+}
+.listSwitch {
+  color: #656288;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 20px;
+  display: flex !important;
+  align-items: center;
+}
+.listSwitch input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.listSwitch label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 36px;
+  height: 20px;
+  background: #2563eb;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  margin-left: 10px;
+}
+.listSwitch label:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+.listSwitch input:checked + label {
+  background: #2563eb;
+}
+.listSwitch input:checked + label:after {
+  left: calc(100% - 1px);
+  transform: translateX(-100%);
+}
+.listSwitch label:active:after {
+  width: 36px;
+}
+.mainClndBtns {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 30px;
+}
+.clndBtns {
+  position: relative;
+  left: 270px;
+  top: 0;
+}
+.column-view {
+  display: flex;
+  flex-direction: column;
+}
+.column-day {
+  margin-bottom: 1rem;
+}
+.column-event {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+}
+.column-event.video {
+  background-color: #f0f8ff;
+}
+.column-event.cabinet {
+  background-color: #f5f5dc;
+}
+.calendarMain {
+  width: 100%;
+  float: left;
+  display: flex;
+}
+.secCalendar {
+  margin-top: 51px;
+}
+.appointmentFoot .secCalendar .rbc-calendar {
+  height: 375px !important;
+}
+.rbc-events-container .rbc-event:last-child {
+  left: 0 !important;
+  width: 100% !important;
+}
+.rbc-events-container .rbc-event:nth-last-child(2) {
+  left: 0 !important;
+  width: 100% !important;
+}
+
+.indicateBtn {
+  width: 145px;
+  height: 35px;
+  color: #eb7f00;
+  border: #eb7f00 1px solid;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+.delayDiv {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  margin-left: 15px;
+}
+
+.delayDiv input[type="text"] {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 17px;
+  color: #eb7f00;
+  border: #eb7f00 1px solid;
+  border-radius: 3px;
+  outline: none !important;
+  margin-right: 15px;
+  margin-left: 10px;
+  width: 130px;
+  text-align: center;
+}
+.delayDiv input[type="text"]::placeholder {
+  color: #eb7f00;
+}
+.delayDiv input[type="text"].delayInput {
+  width: 100px;
+}
+.eraseBtn {
+  width: 126px;
+  height: 39px;
+  color: #f04b55;
+  border: #f04b55 1px solid;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 0;
+}
+.first-half .rbc-time-gutter .rbc-timeslot-group:last-child .rbc-current-time-slot {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.week-view .rbc-time-view .rbc-allday-cell {
+  display: none;
+}
+.week-view .rbc-time-view .rbc-row {
+  min-height: 45px;
+  background: #fff;
+  padding: 0 0;
+}
+.week-view .rbc-time-view .rbc-row button {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+.week-view .rbc-header {
+  border-bottom: none;
+}
+.week-view .rbc-overflowing .rbc-time-header-gutter {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.week-view .rbc-header + .rbc-header {
+  border-left: none;
+}
+.week-view .rbc-time-header-content {
+  border-left: 1px solid #eaeef1;
+}
+.week-view .rbc-header.rbc-today {
+  background: #eaeef1;
+}
+.week-view .rbc-header {
+  line-height: 45px;
+}
+.week-view .rbc-time-header.rbc-overflowing {
+  margin-right: 29px !important;
+}
+.month-view .rbc-month-header {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+.month-view .rbc-month-header .rbc-header {
+  padding: 10px 3px;
+  background: #fff;
+}
+.month-view .rbc-row-bg {
+  background: #fff;
+}
+.month-view .rbc-off-range-bg {
+  background: #f9f9fc;
+}
+.month-view .rbc-date-cell button {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+.month-view .rbc-date-cell.rbc-off-range button {
+  color: #6b7a8b;
+}
+.month-view .rbc-date-cell {
+  text-align: left;
+  padding: 15px;
+}
+.month-view .rbc-month-row {
+  height: 300px;
+}
+.month-view .rbc-month-row {
+  overflow: unset;
+}
+.freeSlotBtn {
+  width: 133px;
+  height: 37px;
+  color: #4ba9e9;
+  border: #4ba9e9 1px solid;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.week-view .freeDiv {
+  opacity: 0;
+}
+.week-view .showFreeSlot .freeDiv {
+  opacity: 1;
+}
+.week-view .showFreeSlot .videoDiv,
+.week-view .showFreeSlot .cabinetDiv {
+  opacity: 0;
+}
+
+.monthEvnt {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000 !important;
+  min-height: 25px;
+  display: flex;
+  margin-top: 8px !important;
+  white-space: nowrap;
+}
+.monthEvnt .event-time {
+  width: 90%;
+  overflow: hidden;
+}
+.month-view .rbc-event {
+  display: none;
+}
+.month-view .monthEvnt {
+  display: flex;
+}
+.month-view .rbc-row-segment {
+  display: none;
+}
+.month-view .rbc-date-header {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.month-view .rbc-show-more {
+  border: #6b7a8b 1px solid;
+  background: #eaeef1;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  float: left;
+  padding: 2px 10px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.month-view .rbc-row-content {
+  min-height: 130px;
+}
+
+.popupMonth {
+  width: 680px;
+}
+.popupMonth h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 20px;
+}
+.popupMonth .free {
+  background: rgba(174, 175, 226, 0.12) url("assets/images/free-icon.svg") 10px center no-repeat;
+  padding: 0 0 0 37px;
+  border: 1px solid #fff !important;
+  border-left: #c5c6e0 4px solid !important;
+  flex-flow: unset !important;
+  align-items: center !important;
+}
+.popupMonth .video {
+  background: rgba(239, 250, 239, 1) url("assets/images/video-icon.svg") 11px center no-repeat;
+  padding: 0 0 0 36px;
+  border: 1px solid #fff !important;
+  border-left: #5fb75e 4px solid !important;
+  flex-flow: unset !important;
+  align-items: center !important;
+  color: #5fb75e;
+}
+.popupMonth .cabinet {
+  background: rgba(240, 242, 255, 1) url("assets/images/cabinet-icon.svg") 11px center no-repeat;
+  padding: 0 0 0 36px;
+  border: 1px solid #fff !important;
+  border-left: #687eff 4px solid !important;
+  flex-flow: unset !important;
+  align-items: center !important;
+  color: #5087fa;
+}
+.popupTime {
+  display: none;
+}
+.popupMonth .popupTime {
+  display: block;
+}
+.popupMonth .popupMonthContain {
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  justify-content: space-between;
+}
+.popMnthLft {
+  display: flex;
+}
+.popupMonth .popTtle {
+  color: #000;
+  margin-left: 10px;
+}
+.popupMonth li {
+  border-radius: 3px;
+  padding: 15px 0 15px 36px !important;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.popupMonth ul {
+  height: 450px;
+  overflow-x: auto;
+  padding-right: 20px;
+}
+.popupMonth ul::-webkit-scrollbar {
+  width: 9px;
+  margin-right: 10px;
+}
+.popupMonth ul::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f5f5fb;
+}
+.popupMonth ul::-webkit-scrollbar-thumb {
+  background: #687eff;
+  border-radius: 10px;
+}
+.popupMonth ul::-webkit-scrollbar-thumb:hover {
+  background: #687eff;
+}
+.popupMonth li.free .popTtle {
+  display: none;
+}
+.dotPop {
+  margin-right: 10px;
+  margin-top: -3px;
+  position: relative;
+  cursor: pointer;
+}
+.dotInner {
+  width: 103px;
+  padding: 8px 8px 3px;
+  background: #3d3a55;
+  border-radius: 7px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  z-index: 99;
+  display: none;
+}
+.dotInner p {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 5px;
+}
+.dotInner:before {
+  content: "";
+  border-bottom: 8px solid #3d3a55;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  top: -8px;
+  right: 12px;
+}
+.dotPop.active .dotInner {
+  display: block;
+}
+.cancelTxt {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #656288;
+  margin-top: -10px;
+}
+.cancelForm {
+  width: 100%;
+  float: left;
+  border-top: #eaeef1 1px solid;
+  padding: 35px 0 0;
+  margin-top: 35px;
+}
+.cancelForm h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin: 0 0 20px;
+}
+.cancelForm select {
+  width: 100%;
+  height: 63px;
+  border: #f0f2ff 1px solid;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 30px;
+  padding: 0 30px;
+  outline: none !important;
+  appearance: none;
+  background: url("assets/images/chev-bottom.svg") right 20px center no-repeat;
+}
+.cancelForm button {
+  min-width: 281px;
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+  color: #fff;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 19px 60px;
+  border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.speceficPopup .popup-content.resheduleDiv {
+  padding-bottom: 60px;
+}
+.resheduleDiv .cancelTxt {
+  margin-bottom: 50px;
+}
+.resheduleDiv .selected-dates h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #6b7a8b;
+}
+.resheduleDiv .selected-dates h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  margin: 12px 0 18px;
+}
+.resheduleDiv .selected-dates h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin: 12px 0 18px;
+}
+.resheduleDiv .selected-dates ul li {
+  border: #f0f2ff 1px solid;
+  padding: 5px 16px;
+  border-radius: 4px;
+}
+.resheduleDiv .selected-dates ul li.active {
+  border: #04c000 1px solid;
+}
+.holidayPopup .calendar-section h3.reHdn {
+  font-size: 28px;
+}
+.holidayPopup .calendar-section h5 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.ReschedulePopup .calendar-section {
+  width: 360px;
+}
+.ReschedulePopup .selected-dates {
+  margin-top: 90px;
+}
+.ReschedulePopup .selected-dates .TopHead h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+.ReschedulePopup .selected-dates .TopHead h3 span {
+  font-weight: 400;
+  color: #6b7a8b;
+}
+.ReschedulePopup .selected-dates p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 20px;
+}
+.ReschedulePopup .selected-dates .TopHead {
+  margin-bottom: 24px;
+}
+.ReschedulePopup .selected-dates ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  min-height: 150px;
+}
+.ReschedulePopup .selected-dates ul li {
+  padding: 0 3px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+.ReschedulePopup .selected-dates ul li span {
+  display: block;
+  background: #d8ddff;
+  border-radius: 4px;
+  padding: 5px 20px;
+  text-align: center;
+  font: 400 16px "Rubik", sans-serif;
+  color: #000;
+  cursor: pointer;
+}
+.ReschedulePopup .selected-dates ul li:hover span {
+  background: #bce0f6;
+}
+.ReschedulePopup .selected-dates ul li.active span {
+  background: #4ba9e9;
+  color: #fff;
+}
+.ReschedulePopup .selected-dates .BottomSecion label {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+.ReschedulePopup .selected-dates .BottomSecion .CustomSelect {
+  background: url(assets/images/select-dropdown-arrow-icon.svg) no-repeat right 28px top 25px;
+  width: 100%;
+  margin-top: 15px;
+}
+.ReschedulePopup .selected-dates .BottomSecion .CustomSelect select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 1px solid #f0f2ff;
+  border-radius: 30px;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 19px 49px 19px 30px;
+  width: 100%;
+}
+.ReschedulePopup .selected-dates .saveBtn2 {
+  width: 200px;
+}
+.ReschedulePopup .selected-dates .SkelWrapper {
+  min-height: 150px;
+}
+.ReschedulePopup .react-calendar__viewContainer .react-calendar__month-view__days .react-calendar__tile--active {
+  background: #4ba9e9;
+  color: #fff;
+  border-radius: 50%;
+}
+.resheduleDiv .selected-dates ul {
+  height: 120px;
+}
+.delayMain {
+  display: none;
+}
+.delayMain.viewDiv {
+  display: block;
+}
+/*====================================Appointment Ends====================================*/
+
+// Saheb's css end
+
+// Nanai's css Start
+
+/*  Global Radio Button Style Start */
+.StylesRadio {
+  cursor: pointer;
+  display: block;
+  min-height: 24px;
+  min-width: 24px;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default radio button */
+.StylesRadio input {
+  cursor: pointer;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+/* Create a custom radio button */
+.StylesRadio .checkmark {
+  background-color: #fff;
+  border: 1px solid #4d4d4d;
+  border-radius: 50%;
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+/* On mouse-over, add a grey background color */
+.StylesRadio:hover input ~ .checkmark {
+  background-color: #fff;
+}
+/* When the radio button is checked, add a blue background */
+.StylesRadio input:checked ~ .checkmark {
+  background-color: #fff;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.StylesRadio .checkmark:after {
+  content: "";
+  display: none;
+  position: absolute;
+}
+/* Show the indicator (dot/circle) when checked */
+.StylesRadio input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the indicator (dot/circle) */
+.StylesRadio .checkmark:after {
+  background: #687eff;
+  border-radius: 50%;
+  height: 12px;
+  left: 5px;
+  top: 5px;
+  width: 12px;
+}
+/*  Global Radio Button Style End */
+
+/*  Global Checkbox Style Start */
+.StylesCheckbox {
+  cursor: pointer;
+  display: block;
+  min-height: 18px;
+  min-width: 18px;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default radio button */
+.StylesCheckbox input {
+  cursor: pointer;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+/* Create a custom radio button */
+.StylesCheckbox .checkmark {
+  background-color: #fff;
+  border: 1px solid #c5c6e0;
+  border-radius: 4px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 18px;
+}
+/* On mouse-over, add a grey background color */
+.StylesCheckbox:hover input ~ .checkmark {
+  background-color: #fff;
+}
+/* When the radio button is checked, add a blue background */
+.StylesCheckbox input:checked ~ .checkmark {
+  background-color: #687eff;
+  border-color: #687eff;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.StylesCheckbox .checkmark:after {
+  content: "";
+  display: none;
+  position: absolute;
+}
+/* Show the indicator (dot/circle) when checked */
+.StylesCheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.StylesCheckbox .checkmark:after {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  height: 10px;
+  left: 5px;
+  top: 1px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 4px;
+}
+/*  Global Checkbox Style End */
+
+/************************** Doctor Create Profile Start(08/08/24) **************************/
+.DeleteList li {
+  align-items: center;
+  background-color: #eef0ff;
+  border-radius: 6px;
+  color: #000000;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  padding: 10px;
+  width: auto;
+}
+.DeleteList li span {
+  color: #5087fa;
+}
+.DeleteList li .DltBtn {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.doctormain {
+  background-color: rgba(235, 235, 245, 0.6);
+}
+
+.DoctorProfileTop {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 58px;
+  padding: 33px 32px 25px 41px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+.DoctorProfileTop h3 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 41.45px;
+  margin: 0;
+}
+.DoctorProfileTop h3 span {
+  color: #687eff;
+}
+.DoctorProfileTop .SaveBtn {
+  background-color: #687eff;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 16px;
+  padding: 17px 0;
+  width: 178px;
+}
+.DoctorProfileTop .EditProfileBtn {
+  background-color: #fff;
+  border: 1px solid #687eff;
+  border-radius: 50px;
+  color: #687eff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 16px;
+  padding: 16px 0;
+  width: 178px;
+}
+.DoctorProfileTop .SeeProfilePageBtn {
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  margin-left: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 17px 0;
+  transition: 0.3s;
+  width: 178px;
+}
+
+.Card {
+  background-color: #fff;
+  border-radius: 20px;
+}
+.RoxBox {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 41px;
+  padding-right: 32px;
+  position: relative;
+}
+.DoctorProfileLeftSec {
+  align-self: flex-start;
+  max-height: 100vh;
+  max-width: 28%;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.DoctorProfileLeftSec::-webkit-scrollbar {
+  width: 9px;
+  margin-right: 10px;
+}
+.DoctorProfileLeftSec::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f5f5fb;
+}
+.DoctorProfileLeftSec::-webkit-scrollbar-thumb {
+  background: #687eff;
+  border-radius: 10px;
+}
+.DoctorProfileLeftSec::-webkit-scrollbar-thumb:hover {
+  background: #687eff;
+}
+.DoctorProfileLeftSec .Card {
+  padding: 20px 32px 9px;
+}
+.DoctorProfileLeftSec .LeftList li {
+  border-bottom: 1px solid #ccd6dd;
+}
+.DoctorProfileLeftSec .LeftList li:last-child {
+  border-bottom: none;
+}
+.DoctorProfileLeftSec .LeftList li button {
+  background: url(./assets/images/right-arrow-disabled-icon.svg) no-repeat right center;
+  border: none;
+  color: #000000;
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px 20px 20px 0;
+  text-align: left;
+  width: 100%;
+}
+.DoctorProfileLeftSec .LeftList .active button {
+  background-image: url(./assets/images/blue-right-arrow-icon.svg);
+  color: #5087fa;
+}
+.DoctorProfileLeftSec .LeftList .Complete button {
+  background-image: url(./assets/images/blue-tick-circle-icon.svg);
+}
+.DoctorProfileRightSec {
+  max-width: 67%;
+  width: 100%;
+}
+.DoctorProfileRightSec .Card {
+  padding: 42px 137px 55px 47px;
+}
+.DoctorProfileRightSec h3 {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+.DoctorProfileRightSec p {
+  color: #656288;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  margin: 0 0 20px;
+}
+.DoctorProfileRightSec .FormList {
+  padding-top: 15px;
+}
+.DoctorProfileRightSec .FormList li .InnerFormBox {
+  max-width: 563px;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .InnerFormBox .CabinAddSectionContainer {
+  position: relative;
+}
+.DoctorProfileRightSec .FormList li .InnerFormBox .ShowCHMap button {
+  position: absolute;
+  top: 15px;
+  right: -159px;
+  border: none;
+  background-color: #eef0ff;
+  padding: 10px 20px;
+  border-radius: 19px;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.DoctorProfileRightSec .FormList li .InnerFormBox .ShowCHMap button.CloseMap {
+  background-color: #ffc2c2;
+}
+.DoctorProfileRightSec .FormList .CabinAddMapContainer {
+  margin-bottom: 30px;
+}
+.DoctorProfileRightSec .FormList li label {
+  color: #000000;
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.DoctorProfileRightSec .FormList li .MargnTop {
+  margin-top: 20px;
+}
+.DoctorProfileRightSec .FormList .MargnBottom {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.DoctorProfileRightSec .FormList li .SubLabel {
+  font-size: 16px;
+}
+.DoctorProfileRightSec .FormList li .SubLabel2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.DoctorProfileRightSec .FormList li .CustomSelect {
+  background: url(./assets/images/select-dropdown-arrow-icon.svg) no-repeat right 28px top 25px;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .CustomSelect select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 1px solid #ccd6dd;
+  border-radius: 30px;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 21px 49px 21px 30px;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .CustomSelect select:focus {
+  border-color: #4d8bf2;
+}
+.DoctorProfileRightSec .FormList li .FormControl {
+  background-color: #fff;
+  border: 1px solid #ccd6dd;
+  border-radius: 30px;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 21px 30px;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .FormControl:focus {
+  border-color: #4d8bf2;
+}
+.DoctorProfileRightSec .FormList li .TextareaForm {
+  border: 1px solid #ccd6dd;
+  border-radius: 20px;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 161px;
+  padding: 22px 30px;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .TextareaForm:focus {
+  border-color: #4d8bf2;
+}
+.DoctorProfileRightSec .FormList li .UploadFilesLabel {
+  height: 94px;
+  margin-bottom: 25px;
+  position: relative;
+  width: 94px;
+}
+.DoctorProfileRightSec .FormList li .UploadFilesLabel .UploadBtn {
+  background: url(./assets/images/upload-icon1.svg) no-repeat 0 0;
+  border: none;
+  height: 94px;
+  width: 94px;
+}
+.DoctorProfileRightSec .FormList li .UploadFilesLabel .UploadInput {
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .SelectButton {
+  background: url(./assets/images/select-dropdown-arrow-icon.svg) no-repeat right 28px top 25px;
+  border: 1px solid #ccd6dd;
+  border-radius: 30px;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 21px 49px 21px 30px;
+  text-align: left;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .SelectButton:focus {
+  border-color: #4d8bf2;
+}
+.DoctorProfileRightSec .FormList li .LanguageDropdown {
+  border: 1px solid #ccd6dd;
+  border-radius: 20px;
+  max-height: 205px;
+  margin-top: 20px;
+  overflow-x: auto;
+  overflow-y: auto;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .LanguageDropdown::-webkit-scrollbar {
+  width: 9px;
+  margin-right: 10px;
+}
+.DoctorProfileRightSec .FormList li .LanguageDropdown::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f5f5fb;
+}
+.DoctorProfileRightSec .FormList li .LanguageDropdown::-webkit-scrollbar-thumb {
+  background: #687eff;
+  border-radius: 10px;
+}
+.DoctorProfileRightSec .FormList li .LanguageDropdown::-webkit-scrollbar-thumb:hover {
+  background: #687eff;
+}
+.DoctorProfileRightSec .FormList li .LanguageDropdown .DropdownItem {
+  align-items: center;
+  border-bottom: 1px solid #ccd6dd;
+  display: flex;
+  padding: 18px 26px 10px 26px;
+}
+.DoctorProfileRightSec .FormList li .LanguageDropdown .DropdownItem:last-child {
+  border-bottom: none;
+}
+.DoctorProfileRightSec .FormList li .LanguageDropdown .DropdownItem .StylesCheckbox {
+  margin-right: 10px;
+}
+.DoctorProfileRightSec .FormList li .LanguageDropdown .DropdownItem label {
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.DoctorProfileRightSec .FormList li .AddInputBox {
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(174, 175, 226, 0.12);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.DoctorProfileRightSec .FormList li .AddInputBox .FormControl {
+  background-color: #fff;
+  border: none;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 22px 30px;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .AddInputBox .StylesRadio {
+  margin-bottom: 0;
+  margin-right: 33px;
+}
+.DoctorProfileRightSec .FormList li .AddInputBox .SaveBtn {
+  background-color: #fff;
+  border: none;
+  color: #5087fa;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+.DoctorProfileRightSec .FormList li .UploadDropbox {
+  height: 161px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .UploadDropbox .UploadDropboxBtn {
+  background: url(./assets/images/dropbox-upload-bg.svg) no-repeat 0 0;
+  border: none;
+  cursor: pointer;
+  height: 161px;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .UploadDropbox .DropboxInput {
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.DoctorProfileRightSec .FormList li .cabinAddInptMaxWd > div {
+  min-width: 490px;
+}
+
+.DoctorProfileRightSec .FormList li .AddBtn {
+  background: url(./assets/images/add-icon.svg) no-repeat 0 0;
+  border: none;
+  line-height: 40px;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  padding-left: 48px;
+}
+.DoctorProfileRightSec .FormList li .AddBtnMrgnTop {
+  margin-top: 20px;
+}
+.DoctorProfileRightSec .FormList li .AddBtnMrgnBtn {
+  margin-bottom: 30px;
+}
+.DoctorProfileRightSec .FormList li .AddList {
+  margin-top: 20px;
+}
+.DoctorProfileRightSec .FormList li .AddList li {
+  background-color: #eef0ff;
+  align-items: center;
+  border-radius: 6px;
+  color: #000000;
+  display: inline-flex;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+.DoctorProfileRightSec .FormList li .AddList2 li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .AddList li span {
+  color: #5087fa;
+}
+.DoctorProfileRightSec .FormList li .AddList li .DltBtn {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  padding: 0;
+}
+.DoctorProfileRightSec .FormList li .InputGroupList {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.DoctorProfileRightSec .FormList li .InputGroupList li {
+  display: flex;
+}
+.DoctorProfileRightSec .FormList li .InputGroupList li .GroupInput {
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(174, 175, 226, 0.12);
+  border-radius: 30px;
+  display: inline-flex;
+  overflow: hidden;
+  padding-left: 30px;
+}
+.DoctorProfileRightSec .FormList li .InputGroupList li .GroupInput span {
+  color: #5087fa;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.DoctorProfileRightSec .FormList li .InputGroupList li .GroupInput .FormControl {
+  background: url(./assets/images/border-left-bg.svg) no-repeat 0 center #fff;
+  border: none;
+  border-radius: 0;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 14px;
+  padding: 22px 30px;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .InputGroupList li .SaveBtn {
+  background-color: #687eff;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 20px;
+  padding: 17px 0;
+  width: 120px;
+}
+.DoctorProfileRightSec .FormList li .SmallRadioList {
+  margin-bottom: 20px;
+}
+.DoctorProfileRightSec .FormList li .SmallRadioList li {
+  margin-right: 10px;
+}
+.DoctorProfileRightSec .FormList li .SmallRadioList li {
+  align-items: center;
+  border: 1px solid #ccd6dd;
+  border-radius: 20px;
+  display: inline-flex;
+  padding: 10px 16px;
+}
+.DoctorProfileRightSec .FormList li .SmallRadioList li label {
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+.DoctorProfileRightSec .FormList li .UploadList {
+  display: flex;
+}
+.DoctorProfileRightSec .FormList li .UploadList li {
+  margin-bottom: 16px;
+  margin-right: 16px;
+  position: relative;
+}
+.DoctorProfileRightSec .FormList li .UploadList li img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.DoctorProfileRightSec .FormList li .UploadList li .UploadFilesLabel {
+  height: 94px;
+  margin-bottom: 25px;
+  position: relative;
+  width: 94px;
+}
+.DoctorProfileRightSec .FormList li .UploadList li .UploadFilesLabel .UploadBtn {
+  background: url(./assets/images/upload-icon2.svg) no-repeat 0 0;
+  border: none;
+  height: 94px;
+  width: 94px;
+}
+.DoctorProfileRightSec .FormList li .UploadList li .UploadFilesLabel .UploadInput {
+  cursor: pointer;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .UploadList li .DltBtn2 {
+  background: url(./assets/images/delete-icon2.svg) no-repeat 0 0;
+  border: none;
+  height: 28px;
+  padding: 0;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 28px;
+  z-index: 1;
+}
+.DoctorProfileRightSec .FormList li .LoadingBox {
+  border: 1px solid #e4e9f0;
+  border-radius: 6px;
+  padding: 12px 70px 12px 12px;
+  position: relative;
+}
+.DoctorProfileRightSec .FormList li .LoadingBox .RemoveUploadDelete {
+  background: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  right: 70px;
+  top: 12px;
+}
+.DoctorProfileRightSec .FormList li .LoadingBox .LoadingBoxTop {
+  display: flex;
+}
+.DoctorProfileRightSec .FormList li .LoadingBox .LoadingBoxTop .UploadImg {
+  margin-right: 6px;
+}
+.DoctorProfileRightSec .FormList li .LoadingBox .LoadingBoxTop .UploadImg img {
+  border-radius: 3px;
+  height: auto;
+  width: 36px;
+}
+.DoctorProfileRightSec .FormList li .LoadingBox .LoadingBoxTop .UploadText h4 {
+  color: #000;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 0 5px;
+}
+.DoctorProfileRightSec .FormList li .LoadingBox .LoadingBoxTop .UploadText h5 {
+  color: #969db2;
+  font-family: "Rubik", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0;
+}
+.DoctorProfileRightSec .FormList li .LoadingBox .ProgressbarBox {
+  align-items: center;
+  display: flex;
+}
+.DoctorProfileRightSec .FormList li .LoadingBox .ProgressbarBox .ProgressbarSec {
+  background-color: #f5f7f9;
+  border-radius: 4px;
+  height: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .LoadingBox .ProgressbarBox .ProgressbarSec .Progressbar {
+  background-color: #5087fa;
+  border-radius: 4px;
+  height: 5px;
+}
+.DoctorProfileRightSec .FormList li .LoadingBox .ProgressbarBox .TotalText {
+  color: #969db2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  margin-left: 6px;
+  width: 21px;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList li {
+  margin-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList li:nth-child(1) {
+  width: 33%;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList li:nth-child(2) {
+  width: 67%;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList li .CustomSelect select {
+  padding: 19px 49px 19px 30px;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList li .FormControl {
+  padding: 19px 26px;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList li .DeleteList li:nth-child(1) {
+  cursor: pointer;
+  display: inline-flex;
+  width: auto;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList2 li {
+  align-items: center;
+  display: flex;
+  margin-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList2 li:nth-child(2) {
+  width: 33%;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList2 li:nth-child(3) {
+  width: 33%;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList2 li .LabelSpan {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList2 li .StylesRadio {
+  margin-bottom: 0;
+  margin-right: 4px;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList2 li .CustomSelect select {
+  padding: 19px 49px 19px 30px;
+}
+.DoctorProfileRightSec .FormList li .SmlInputList2 li .FormControl {
+  padding: 19px 26px;
+}
+.DoctorProfileRightSec .FormList li .RadioList {
+  display: flex;
+}
+.DoctorProfileRightSec .FormList li .RadioList li {
+  align-items: center;
+  display: inline-flex;
+  margin-right: 20px;
+}
+.DoctorProfileRightSec .FormList li .RadioList li .LabelSpan {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.DoctorProfileRightSec .FormList li .RadioList li .StylesRadio {
+  margin-bottom: 0;
+  margin-right: 8px;
+}
+.DoctorProfileRightSec .FormList li .accordion .accordion-item .accordion-header {
+  align-items: center;
+  display: flex;
+}
+.DoctorProfileRightSec .FormList li .accordion .accordion-item .accordion-header .StylesCheckbox {
+  margin-right: 10px;
+}
+.DoctorProfileRightSec .FormList li .accordion .accordion-item .accordion-header label {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.accordion-content {
+  display: none;
+  padding: 10px 0; /* Optional: Adding a transition for smooth effect */
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+.accordion-content.visible {
+  display: block;
+  max-height: 500px; /* Or a value that fits your content */
+  opacity: 1;
+}
+.accordion-content.hidden {
+  display: none;
+  max-height: 0;
+  opacity: 0;
+}
+
+/*---------------- Doctor Create Profile 2 Start ----------------*/
+.CompleteProfileMain {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+.CompleteProfileMain .CompleteProfileBox {
+  text-align: center;
+  width: 410px;
+}
+.CompleteProfileMain .CompleteProfileBox h3 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+  margin: 0 0 30px;
+}
+.CompleteProfileMain .CompleteProfileBox h3 strong {
+  color: #687eff;
+  font-weight: 700;
+}
+.CompleteProfileMain .CompleteProfileBox h4 {
+  color: #656288;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 30px;
+}
+.CompleteProfileMain .CompleteProfileBox .GoProfiledBtn {
+  background-color: #fff;
+  border: 1px solid #c5c6e0;
+  border-radius: 50px;
+  color: #000000;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 6px;
+  margin-right: 6px;
+  padding: 16px 0;
+  width: 187px;
+}
+.CompleteProfileMain .CompleteProfileBox .dashboardBtn {
+  background-color: #687eff;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 6px;
+  margin-right: 6px;
+  padding: 17px 0;
+  width: 187px;
+}
+/*---------------- Doctor Create Profile 2 End ----------------*/
+
+/************************** Doctor Create Profile End(08/08/24) **************************/
+
+/************************* Doctor Detaile Start(21/08/24) *************************/
+.DDBody {
+  background-color: #f9f9fc;
+}
+.BodyTopinner {
+  width: 100%;
+  background-color: #fff;
+}
+.BodyTop {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  padding: 35px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.BodyTopLftDocinfo {
+  display: flex;
+  align-items: center;
+}
+.BodyTopLftDocinfo .DocinfoImg img {
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+}
+.DocinfoTxt {
+  padding-left: 15px;
+}
+.DocinfoTxt h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #000;
+  margin: 0 0 2px 0;
+}
+.DocinfoTxt h2 span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #e74c4c;
+}
+.DocinfoTxt p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #5087fa;
+  margin: 0 0 8px 0;
+}
+.DocinfoTxt .DocinfoRating {
+  align-items: center;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  color: #656288;
+}
+.DocinfoTxt .DocinfoRating > div {
+  margin-right: 5px;
+}
+.DocinfoTxt .DocinfoRating .react-stars span {
+  margin-right: 2px;
+}
+.DocinfoTxt .DocinfoRating img {
+  height: 18px;
+  margin-right: 8px;
+}
+.BodyTopRgt {
+  align-items: center;
+  display: flex;
+}
+.BodyTopRgt a.bkbtnn {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px 0 0;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 35px;
+  transition: 0.3s;
+  color: #000;
+  text-decoration: none;
+}
+.BodyTopRgt .bkbtnn .backIcon {
+  margin-right: 10px;
+}
+.BodyTopRgt button.addfav {
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+  width: 178px;
+  height: 53px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
+.NewRghtWhiteBody button.addfav {
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+  width: 100%;
+  height: 53px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
+.BodyTopRgt a.addfav:hover {
+  background: linear-gradient(101.45deg, #4d8bf2 13.92%, #4ba9e9 71.82%);
+}
+.TabFixed {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+.tabLink {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 15px 0 0;
+  width: 1160px;
+}
+.tabLink ul {
+  display: flex;
+  border-bottom: 1px solid #c5c6e0;
+}
+.tabLink ul li button {
+  background: none;
+  border: none;
+  padding: 17px 44px;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #181818;
+  border-bottom: 2px solid transparent;
+}
+.tabLink ul li button.active {
+  border-bottom: 2px solid #687eff;
+  color: #687eff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.PanelBody {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  padding: 50px 0;
+  align-items: start;
+  justify-content: space-between;
+  gap: 30px;
+}
+.PanelBodyLft {
+  width: 66.66666667%;
+}
+.PanelBodyRgt {
+  width: 33.33333333%;
+}
+.PanelBodyLftBox {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+  margin: 0 0 40px;
+}
+.PanelBodyLftBox .PanelBodyLftBoxtop {
+  width: 100%;
+  border-bottom: 1px solid #c5c6e0;
+  padding: 30px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.PanelBodyLftBoxtopLft h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+  margin: 0 0 5px;
+}
+.PanelBodyLftBoxtopLft p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #656288;
+  margin: 0;
+}
+.PanelBodyLftBoxtopRgt a {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #687eff;
+}
+.PanelBodyLftBoxM {
+  width: 100%;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.PanelBodyLftBoxM.TopLang {
+  align-items: center;
+}
+.PanelBodyLftBoxMTwo {
+  width: 100%;
+  padding: 0 60px 35px 60px;
+}
+.PanelBodyLftBoxMTwo .AppTextLangCont {
+  text-align: center;
+}
+.PanelBodyLftBoxMTwo .AppTextLangCont p {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.PanelBodyLftBoxM .LanguageSelectBox select {
+  border: none;
+  background: #e9e9f5;
+  padding: 10px 15px;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+.PanelBodyLftBoxMLft h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #000000;
+  margin: 0 0 25px;
+}
+.PanelBodyLftBoxMLft h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #000000;
+  margin: 0 0 15px;
+}
+.PanelBodyLftBoxMLft p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #656288;
+  margin: 0 0 25px;
+}
+.PanelBodyLftBoxMLft a {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #687eff;
+}
+.PanelBodyLftBoxMRgt h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #000000;
+  margin: 0 0 5px;
+}
+.PanelBodyLftBoxMRgt p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #656288;
+  margin: 0 0 25px;
+}
+.PanelBodyLftBoxAdio {
+  width: 100%;
+  padding: 30px 60px;
+  border-top: 1px solid #c5c6e0;
+  border-bottom: 1px solid #c5c6e0;
+}
+.PaddingZero {
+  padding: 0;
+}
+.NoBdrTop {
+  border-top: none;
+}
+.NoBdr {
+  border: none;
+}
+.PanelBodyLftBoxAdio h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #000000;
+  margin: 0 0 8px;
+}
+.PanelBodyLftBoxAdio .HdrMargB {
+  margin-bottom: 25px;
+}
+.PanelBodyLftBoxAdio .HdrMargB15 {
+  margin-bottom: 15px;
+}
+.PanelBodyLftBoxAdio p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #656288;
+  margin: 0;
+}
+.PanelBodyLftBoxAdio .ParaMargB {
+  margin-bottom: 25px;
+}
+.PanelBodyLftBoxAdio .ParaMargB .BlueText {
+  color: #687eff;
+  font-weight: 500;
+}
+.PanelBodyLftBoxAdio .BlueArrowList {
+  margin-bottom: 25px;
+  margin-top: 14px;
+}
+.PanelBodyLftBoxAdio .BlueArrowList li {
+  background: url(assets/images/blue-arrow-icon.svg) no-repeat 0 0;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 14px;
+  min-height: 24px;
+  padding-left: 30px;
+  padding-top: 2px;
+}
+.PanelBodyLftBoxAdio .ImgList {
+  display: flex;
+  margin-top: 20px;
+}
+.PanelBodyLftBoxAdio .ImgList li {
+  margin-right: 20px;
+}
+.PanelBodyLftBoxAdio .ImgList li img {
+  border-radius: 8px;
+  height: auto;
+  max-width: 104px;
+}
+.PanelBodyLftBoxAdio .TextBoxList {
+  margin-bottom: 30px;
+}
+.PanelBodyLftBoxAdio .TextBoxList:last-child {
+  margin-bottom: 0;
+}
+.PanelBodyLftBoxAdio .TextBoxList li {
+  display: flex;
+  margin-bottom: 15px;
+}
+.PanelBodyLftBoxAdio .TextBoxList li .LftBox {
+  color: #687eff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.96px;
+  max-width: 120px;
+  min-width: 120px;
+  padding: 0;
+}
+.PanelBodyLftBoxAdio .TextBoxList li .RghtBox {
+  color: #656288;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+}
+.PanelBodyLftBoxAdio .TextBoxList li .RghtBox a {
+  color: #64aafb;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.PanelBodyLftBoxAdio .FAQBtn {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(assets/images/accordion-black-down-arrow-icon.svg);
+  background-position: right 0 top 8px;
+  background-repeat: no-repeat;
+  background-size: 11px auto;
+  border: none;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+}
+.PanelBodyLftBoxAdio .FAQBtn.active {
+  background-image: url(assets/images/accordion-uparrow-icon.svg);
+}
+.PanelBodyLftBoxAdio .InfoBox {
+  margin-top: 10px;
+}
+.PanelBodyLftBoxAdio .InfoBox h4 {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  margin: 0 0 5px;
+}
+.PanelBodyLftBoxAdio .InfoBox p {
+  color: #656288;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  margin: 0;
+}
+.PanelBodyLftBoxAdio .InfoBox .RatesTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+.PanelBodyLftBoxAdio .InfoBox .RatesTable th {
+  border-bottom: 1px solid #c5c6e0;
+  color: #656288;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  text-align: left;
+}
+.PanelBodyLftBoxAdio .InfoBox .RatesTable td {
+  border-bottom: 1px solid #c5c6e0;
+  color: #687eff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  text-align: right;
+}
+.PanelBodyLftBoxAdio .TimeRow {
+  display: flex;
+  justify-content: space-between;
+}
+.PanelBodyLftBoxAdio .TimeRow .TimeLeftBox h4 {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  margin: 30px 0 15px;
+}
+.PanelBodyLftBoxAdio .TimeRow .TimeLeftBox .TimeList li {
+  display: flex;
+  margin-bottom: 15px;
+}
+.PanelBodyLftBoxAdio .TimeRow .TimeLeftBox .TimeList li .DaySec {
+  color: #687eff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  min-width: 120px;
+  text-transform: capitalize;
+}
+.PanelBodyLftBoxAdio .TimeRow .TimeLeftBox .TimeList li .TimeSec {
+  color: #656288;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+}
+.PanelBodyLftBoxAdio .TimeRow .TimeRightBox {
+  max-width: 25%;
+}
+.PanelBodyLftBoxAdio .accordion {
+  margin-top: 20px;
+}
+.PanelBodyLftBoxAdio .accordion .accordion-item {
+  border-bottom: 1px solid #c5c6e0;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.PanelBodyLftBoxAdio .accordion .accordion-item .accordion-title {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(assets/images/accordion-plus-icon.svg);
+  background-position: right 0 top 3px;
+  background-repeat: no-repeat;
+  color: #687eff;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+}
+.PanelBodyLftBoxAdio .accordion .accordion-item .accordion-title.active {
+  background-image: url(assets/images/accordion-minus-icon.svg);
+  background-position: right 0 top 8px;
+}
+.PanelBodyLftBoxAdio .accordion .accordion-item .accordion-content {
+  display: block;
+  margin-top: 8px;
+}
+.PanelBodyLftBoxAdio .accordion .accordion-item .AccordionBody p {
+  color: #656288;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  margin: 0;
+}
+.PanelBodyLftBoxdeeds {
+  width: 100%;
+  padding: 30px 60px;
+}
+.PanelBodyLftBoxdeeds h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #000000;
+  margin: 0 0 15px;
+}
+.PanelBodyLftBoxdeedsBtnGrp {
+  display: flex;
+  align-items: center;
+}
+.PanelBodyLftBoxdeedsBtnGrp button {
+  background: #e9e9f5;
+  border: none;
+  border-radius: 50px;
+  padding: 17px 32px;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #656288;
+  margin: 0 15px 0 0;
+  transition: 0.3s;
+}
+.PanelBodyLftBoxdeedsBtnGrp a:hover {
+  background: #c7c7ed;
+}
+.MapInfoBox {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.MapInfoBoxLft {
+  width: 63%;
+  padding: 50px 30px 50px 60px;
+}
+.MapInfoBoxLft h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #000000;
+  margin: 0 0 0 0;
+}
+.MapInfoBoxLft h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #000000;
+  margin: 25px 0 8px;
+}
+.MapInfoBoxLft p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #656288;
+  margin: 0 0 5px;
+}
+.MapInfoBoxRgt {
+  width: 37%;
+  border-radius: 0 20px 20px 0;
+  overflow: hidden;
+}
+.NewRghtWhiteBody {
+  border-bottom: none;
+  border-top: none;
+  padding: 31px 62px 38px 33px;
+}
+.NewRghtWhiteBody .SummaryList {
+  margin-top: 30px;
+}
+.NewRghtWhiteBody .SummaryList li {
+  background-image: url(assets/images/user-icon3.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 25px;
+  padding-left: 26.5px;
+}
+.NewRghtWhiteBody .SummaryList li:last-child {
+  margin-bottom: 0;
+}
+.NewRghtWhiteBody .SummaryList li:nth-child(2) {
+  background-image: url(assets/images/location-icon.svg);
+  line-height: normal;
+}
+.NewRghtWhiteBody .SummaryList li p {
+  margin-top: 3px;
+}
+.ReviewsList li {
+  border-bottom: 1px solid #c5c6e0;
+  margin-bottom: 25px;
+  padding-bottom: 14px;
+}
+.ReviewsList li:last-child {
+  border-bottom: none;
+}
+.ReviewsList li p {
+  margin-bottom: 14px;
+}
+.ReviewsList li .ReviewsProflBox {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.ReviewsList li .ReviewsProflBox .LftPflBox {
+  align-items: center;
+  display: flex;
+}
+.ReviewsList li .ReviewsProflBox .LftPflBox img {
+  border-radius: 100%;
+  height: 30px;
+  margin-right: 6.5px;
+  width: 30px;
+}
+.ReviewsList li .ReviewsProflBox h4 {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 0;
+}
+.ReviewsList li .ReviewsProflBox .RghtPflBox h5 {
+  background-image: url(assets/images/appointment-star-icon.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  color: #656288;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  padding-left: 21px;
+}
+.PanelBodyLftBox .SeeMoreLink {
+  color: #687eff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+/************************* Doctor Detaile End(21/08/24) *************************/
+
+/************************* Doctor Consultation Observations Start(12/08/24) *************************/
+.LftDoctorConsultationObservations {
+  max-width: 30.5%;
+  padding-top: 25px;
+  width: 100%;
+}
+.LftDoctorConsultationObservations h3 {
+  background: url(assets/images/availability-icon2.svg) no-repeat -10px -6px;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  margin: 0 0 25px;
+  padding-bottom: 7px;
+  padding-left: 44px;
+}
+.LftDoctorConsultationObservations .BreadCambs {
+  display: flex;
+}
+.LftDoctorConsultationObservations .BreadCambs li {
+  color: #687eff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 15px;
+}
+.LftDoctorConsultationObservations .BreadCambs li a {
+  background: url(assets/images/chev-right.svg) no-repeat right center;
+  color: #656288;
+  display: block;
+  font-weight: 400;
+  padding-right: 20px;
+  text-decoration: none;
+}
+.LftDoctorConsultationObservations .Card {
+  border: 1px solid #eaeef1;
+  padding: 0;
+}
+.LftDoctorConsultationObservations .Card .TopCardProfile {
+  align-items: center;
+  border-bottom: 1px solid #eaeef1;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 26px 20px;
+}
+.LftDoctorConsultationObservations .Card .TopCardProfile h3 {
+  background: none;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  padding-left: 0;
+}
+.LftDoctorConsultationObservations .Card .TopCardProfile .PatientProfileInfo {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.LftDoctorConsultationObservations .Card .TopCardProfile .PatientProfileInfo .AgeText {
+  color: #5087fa;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.LftDoctorConsultationObservations .Card .TopCardProfile .PatientProfileInfo .EditButtonIcon {
+  background: url(assets/images/edit-icon2.svg) no-repeat center;
+  border: none;
+  height: 34px;
+  margin-left: 38px;
+  width: 34px;
+}
+.LftDoctorConsultationObservations .Card .BottomCardProfile {
+  padding: 20px 26px;
+}
+.LftDoctorConsultationObservations .Card .BottomCardProfile ul li label {
+  color: #656288;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.LftDoctorConsultationObservations .Card .BottomCardProfile ul li h4 {
+  background: url(assets/images/tickGreen.svg) no-repeat 0 center;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0;
+  padding-left: 32px;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-card {
+  background-color: #fff;
+  border: 1px solid #eaeef1;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-header {
+  border-bottom: 1px solid #eaeef1;
+  color: #6b7a8b;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 20px 50px 20px 26px;
+  position: relative;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-header::after {
+  background-image: url(assets/images/accordion-black-down-arrow-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  height: 9px;
+  position: absolute;
+  right: 29px;
+  top: 32px;
+  width: 13px;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-header.active::after {
+  background-image: url(assets/images/accordion-black-up-arrow-icon.svg);
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content {
+  display: block;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .ChooseitemList li {
+  align-items: center;
+  background: url(assets/images/accordion-arrow2.svg) no-repeat right 24px top 35%;
+  border-bottom: 1px solid #eaeef1;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 54px 8px 30px;
+  position: relative;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .ChooseitemList li:after {
+  background: url(assets/images/dots-icon.svg) no-repeat 0 0;
+  content: "";
+  height: 5px;
+  left: 14px;
+  position: absolute;
+  top: 9px;
+  width: 5px;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .ChooseitemList li:last-child {
+  border-bottom: none;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .ChooseitemList li .Span1 {
+  color: #6b7a8b;
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .ChooseitemList li .Span2 {
+  width: 160px;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .ChooseitemList li .Span2 span {
+  display: block;
+  background-color: #eaeef1;
+  border-radius: 20px;
+  color: #000000;
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 20px;
+  padding: 4px 10px;
+  text-align: center;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .MedicalList li {
+  border-bottom: 1px solid #eaeef1;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding: 0 22px 8px 30px;
+  position: relative;
+  width: 100%;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .MedicalList li:after {
+  background: url(assets/images/dots-icon.svg) no-repeat 0 0;
+  content: "";
+  height: 5px;
+  left: 14px;
+  position: absolute;
+  top: 8px;
+  width: 5px;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .MedicalList li:last-child {
+  border-bottom: none;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .MedicalList li .ListContentTop {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .MedicalList li .AddButton {
+  background: url(assets/images/add-icon2.svg) no-repeat center;
+  border: none;
+  height: 26px;
+  width: 26px;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .MedicalList li .SubList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .MedicalList li .SubList li {
+  align-items: center;
+  border-bottom: none;
+  color: #000000;
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: space-between;
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-right: 22px;
+  padding: 0;
+  width: auto;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .MedicalList li .SubList li:after {
+  display: none;
+}
+.LftDoctorConsultationObservations .Accordion .accordion-content .MedicalList li .SubList li .RemoveButton {
+  background: url(assets/images/remove-icon2.svg) no-repeat center;
+  border: none;
+  height: 20px;
+  margin-left: 12px;
+  width: 20px;
+}
+.RghtDoctorConsultationObservations {
+  max-width: 66.5%;
+  padding-top: 25px;
+  width: 100%;
+}
+.RghtDoctorConsultationObservations .RghtDoctorConsultationObservationsTop {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.RghtDoctorConsultationObservations .RghtDoctorConsultationObservationsTop .CustomSelect {
+  background: url(assets/images/select-dropdown-arrow-icon.svg) no-repeat right 28px top 25px #fff;
+  border-radius: 30px;
+  max-width: 332px;
+  width: 100%;
+}
+.RghtDoctorConsultationObservations .RghtDoctorConsultationObservationsTop .CustomSelect select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 1px solid #ccd6dd;
+  border-radius: 30px;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 21px 49px 21px 30px;
+  width: 100%;
+}
+.RghtDoctorConsultationObservations .RghtDoctorConsultationObservationsTop .BtnList {
+  display: flex;
+}
+.RghtDoctorConsultationObservations .RghtDoctorConsultationObservationsTop .BtnList li {
+  margin-left: 10px;
+}
+.RghtDoctorConsultationObservations .RghtDoctorConsultationObservationsTop .BtnList li .RescheduleBtn {
+  background-color: #eb7f00;
+  border: 1px solid #eb7f00;
+  border-radius: 56px;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 13px 28px;
+}
+.RghtDoctorConsultationObservations .RghtDoctorConsultationObservationsTop .BtnList li .CancelBtn {
+  background-color: #ffd4d7;
+  border: 1px solid #f04b55;
+  border-radius: 56px;
+  color: #f04b55;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 13px 40px;
+}
+.RghtDoctorConsultationObservations .RghtDoctorConsultationObservationsTop .BtnList li .ReferDoctorBtn {
+  background: url(assets/images/refer-icon.svg) no-repeat 28px center #fff;
+  border: 1px solid #687eff;
+  border-radius: 56px;
+  color: #687eff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 13px 28px 13px 58px;
+}
+.RghtDoctorConsultationObservations .Card {
+  border: 1px solid #eaeef1;
+  padding: 0;
+}
+.RghtDoctorConsultationObservations .TabTopSec {
+  border-bottom: 1px solid #eaeef1;
+  padding: 23px 34px 23px;
+}
+.RghtDoctorConsultationObservations .TabTopSec ul {
+  display: flex;
+}
+.RghtDoctorConsultationObservations .TabTopSec ul li {
+  border-bottom: 2px solid #fff;
+  color: #656288;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 38px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.RghtDoctorConsultationObservations .TabTopSec ul .active {
+  border-bottom: 2px solid #687eff;
+  color: #687eff;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent {
+  padding-left: 43px;
+  padding-right: 35px;
+  padding-top: 30px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .FinishBtnSec {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 42px;
+  margin-right: -25px;
+  margin-top: -95px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .FinishBtnSec .FinishBtn {
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 17px 0;
+  transition: 0.3s;
+  width: 141px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .ObservationsList2 {
+  margin-top: 20px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .ObservationsList li {
+  margin-bottom: 29px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .ObservationsList li label {
+  color: #000000;
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .ObservationsList li .EditorImg {
+  height: auto;
+  width: 100%;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .ObservationsList li .form-control {
+  background-color: #fff;
+  border: 1px solid #eaeef1;
+  border-radius: 30px;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 17px 26px;
+  width: 100%;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .BottomIndicatorSec {
+  width: 327px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .BottomIndicatorSec2 {
+  border: 1px solid #eaeef1;
+  border-top: none;
+  border-radius: 0px 0px 20px 20px;
+  margin-bottom: 47px;
+  margin-top: -47px;
+  padding: 41px 17px 13px 28px;
+  width: 100%;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .BottomIndicatorSec .SaveTemplateBtn {
+  background-color: #687eff;
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  float: right;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: -50px;
+  padding: 12px 26px;
+  position: relative;
+  z-index: 1;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .BottomIndicatorSec .IndicatorList {
+  width: 100%;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .BottomIndicatorSec .IndicatorList li {
+  width: 100%;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .BottomIndicatorSec .IndicatorList li label {
+  align-items: center;
+  color: #000000;
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .BottomIndicatorSec .IndicatorList li .AddIndicatorBtn {
+  background: url(assets/images/add-icon.svg) no-repeat center #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .BottomIndicatorSec .IndicatorList li .SubIndicatorList li {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .BottomIndicatorSec .IndicatorList li .SubIndicatorList li label {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .BottomIndicatorSec .IndicatorList li .SubIndicatorList2 li .typeText {
+  border: 1px solid #000000;
+  border-radius: 30px;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 20px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .BottomIndicatorSec .IndicatorList li .SubIndicatorList2 li .ItemNum {
+  background-color: #f04b55;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-flex;
+  height: 22px;
+  justify-content: center;
+  line-height: 22px;
+  margin: 0 0 0 5px;
+  padding: 0;
+  text-align: center;
+  width: 22px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .BottomIndicatorSec .IndicatorList li .SubIndicatorList li .EditIndicatorBtn {
+  background: url(assets/images/edit-icon3.svg) no-repeat center #fff;
+  border: none;
+  height: 28px;
+  margin-left: 20px;
+  width: 28px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .BottomIndicatorSec .IndicatorList li .SubIndicatorList li .RemoveIndicatorBtn {
+  background: url(assets/images/remove-icon3.svg) no-repeat center #fff;
+  border: none;
+  height: 28px;
+  margin-left: 10px;
+  width: 28px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .PrescriptionTopSec {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .PrescriptionTopSec h3 {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .PrescriptionTopSec .BtnList {
+  display: flex;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .PrescriptionTopSec .BtnList li {
+  margin-left: 10px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .PrescriptionTopSec .BtnList li .TempleteBtn {
+  background-color: #fff;
+  border: 1px solid #ccd6dd;
+  border-radius: 20px;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 20px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .PrescriptionTopSec .BtnList li .OtherTempleteBtn {
+  background-color: #dee3ff;
+  border-color: #687eff;
+  color: #687eff;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .PrescriptionTopSec .BtnList li .ActiveTempleteBtn {
+  border: 1px solid #000000;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-list {
+  display: flex;
+  margin-bottom: 26px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-list li {
+  margin-right: 20px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-list li .send-email-btn {
+  background: url(assets/images/email-blue-icon.svg) no-repeat 40px 16.5px #fff;
+  border: 1px solid #ccd6dd;
+  border-radius: 50px;
+  color: #687eff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 13px 40px 13px 66px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-list li .share-btn {
+  background: url(assets/images/blue-share-icon.svg) no-repeat 40px 14.5px #fff;
+  border: 1px solid #ccd6dd;
+  border-radius: 50px;
+  color: #687eff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 13px 40px 13px 68px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .EmailList {
+  margin-bottom: 50px;
+  padding-left: 20px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .EmailList li {
+  color: #656288;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  list-style: disc;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box {
+  position: relative;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box h3 {
+  border-bottom: 1px solid #ccd6dd;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox {
+  height: 453px;
+  overflow-y: auto;
+  margin-top: 15.5px;
+  padding-bottom: 136px;
+  position: relative;
+}
+
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .ChatList {
+  max-height: 316px;
+  overflow-x: auto;
+  overflow-y: auto;
+  padding-bottom: 28px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 28px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .ChatList li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .ChatList .UserList {
+  align-items: end;
+  justify-content: flex-end;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .ChatList li .ChatUserImg img {
+  border: 2px solid #ccd6dd;
+  border-radius: 100%;
+  height: 45px;
+  width: 45px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .ChatList li .ChatUserInfo h4 {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 0;
+  text-transform: uppercase;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .ChatList li .ChatUserInfo h5 {
+  color: #656288;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .ChatList li .DoctorChatContent {
+  background: rgba(174, 175, 226, 0.12);
+  border-radius: 0 20px 20px 20px;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  padding: 20px;
+  width: 100%;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .ChatList li .DoctorChatContent2 {
+  border-radius: 20px 0 20px 20px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .ChatList::-webkit-scrollbar {
+  width: 9px;
+  margin-right: 10px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .ChatList::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f5f5fb;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .ChatList::-webkit-scrollbar-thumb {
+  background: #687eff;
+  border-radius: 10px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .ChatList::-webkit-scrollbar-thumb:hover {
+  background: #687eff;
+}
+
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .BottomChatTextBox {
+  bottom: 0;
+  height: 136px;
+  left: 0;
+  padding: 0 23px 32px 23px;
+  position: absolute;
+  width: 100%;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .BottomChatTextBox .FormTextarea {
+  background-color: #fff;
+  border: 1px solid #ccd6dd;
+  border-radius: 10px;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 104px;
+  overflow-y: auto;
+  padding: 22px 30px;
+  resize: none;
+  width: 100%;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .BottomChatTextBox .FormTextarea::-webkit-scrollbar {
+  width: 9px;
+  margin-right: 10px;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .BottomChatTextBox .FormTextarea::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f5f5fb;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .BottomChatTextBox .FormTextarea::-webkit-scrollbar-thumb {
+  background: #687eff;
+  border-radius: 10px;
+}
+.RghtDoctorConsultationObservations
+  .TabContentSection
+  .TabContent
+  .message-chat-box
+  .BottomChatBox
+  .BottomChatTextBox
+  .FormTextarea::-webkit-scrollbar-thumb:hover {
+  background: #687eff;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .BottomChatTextBox .ChatAttachIcon {
+  bottom: 35px;
+  cursor: pointer;
+  left: 30px;
+  position: absolute;
+  z-index: 1;
+}
+.RghtDoctorConsultationObservations .TabContentSection .TabContent .message-chat-box .BottomChatBox .BottomChatTextBox .ChatButton {
+  background: none;
+  background-image: url(assets/images/appointment-chat-send-icon.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border: none;
+  bottom: 40px;
+  cursor: pointer;
+  height: 24px;
+  right: 30px;
+  position: absolute;
+  z-index: 1;
+  width: 24px;
+}
+
+/*~~~~~~~~~~~~ Modal Style Start ~~~~~~~~~~~~*/
+.modal {
+  z-index: 999;
+}
+
+// / Patient Modal Start /
+.PatientModal .modal-content {
+  max-width: 748px;
+  padding: 41px 50px 57px;
+}
+.PatientModal .modal-content h3 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 44px;
+}
+.PatientModal .modal-content .PatientList li {
+  border-bottom: 1px solid #e7e7f3;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+.PatientModal .modal-content .PatientList li .ProfileLeftSec {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.PatientModal .modal-content .PatientList li .ProfileLeftSec .NameSec {
+  margin-right: 12px;
+}
+.PatientModal .modal-content .PatientList li .ProfileLeftSec .NameSec span {
+  border-radius: 20px;
+  color: #fff;
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 40px;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  width: 40px;
+}
+.PatientModal .modal-content .PatientList li .ProfileLeftSec .NameSec span img {
+  height: auto;
+  width: 100%;
+}
+.PatientModal .modal-content .PatientList li .ProfileTextSec h4 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+.PatientModal .modal-content .PatientList li .ProfileTextSec p {
+  color: #656288;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+.PatientModal .modal-content .AddNewMemberBtn {
+  background: url(assets/images/user-icon3.svg) no-repeat 20px center #fff;
+  border: 1px solid #687eff;
+  border-radius: 30px;
+  color: #5087fa;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 34px;
+  padding: 15.5px 20px 15.5px 50px;
+}
+.PatientModal .ButtonList {
+  margin-top: 44px;
+}
+.PatientModal .ButtonList li {
+  width: 100%;
+}
+.PatientModal .ButtonList li .ModalCloseBtn {
+  padding: 20px 0;
+  width: 100%;
+}
+// / Patient Modal End /
+
+// / Patient Add Indicator Modal Start /
+.AddIndicatorModal .modal-content {
+  max-width: 650px;
+  padding: 42px 47px 42px;
+}
+.AddIndicatorModal .modal-content h3 {
+  background: none;
+  border-bottom: 1px solid #ccd6dd;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 44px;
+  padding-bottom: 20px;
+  padding-left: 0;
+}
+.AddIndicatorModal .modal-content .AddIndicatorList li {
+  margin-bottom: 31px;
+  position: relative;
+}
+.AddIndicatorModal .modal-content .AddIndicatorList li label {
+  color: #000000;
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.AddIndicatorModal .modal-content .AddIndicatorList li .InputSpan {
+  bottom: 19px;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 20px;
+  text-transform: uppercase;
+}
+.AddIndicatorModal .modal-content .AddIndicatorList li .FormControl {
+  background-color: #fff;
+  border: 1px solid #ccd6dd;
+  border-radius: 30px;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 19px 30px;
+  width: 100%;
+}
+.AddIndicatorModal .modal-content .AddIndicatorList li .FormControl2 {
+  padding-right: 46px;
+}
+.AddIndicatorModal .modal-content .AddIndicatorList li .FormControl:focus {
+  border-color: #4d8bf2;
+}
+.AddIndicatorModal .modal-content .AddIndicatorList li .CustomSelect {
+  background: url(assets/images/select-dropdown-arrow-icon.svg) no-repeat right 28px top 25px;
+  width: 100%;
+}
+.AddIndicatorModal .modal-content .AddIndicatorList li .CustomSelect select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 1px solid #ccd6dd;
+  border-radius: 30px;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 19px 49px 19px 30px;
+  width: 100%;
+}
+
+.AddIndicatorModal .modal-content .AddIndicatorList li .CustomSelect select:focus {
+  border-color: #4d8bf2;
+}
+.AddIndicatorModal .ButtonList {
+  margin-top: 44px;
+}
+.AddIndicatorModal .ButtonList li {
+  width: 100%;
+}
+.AddIndicatorModal .ButtonList li .ModalCloseBtn {
+  padding: 20px 0;
+  width: 100%;
+}
+/* Patient Add Indicator Modal End */
+
+/* Patient Delete Modal Start */
+.DeleteModal .modal-content {
+  max-width: 368px;
+  padding: 42px 48px 42px;
+}
+.DeleteModal .modal-content h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.7px;
+  margin-bottom: 31px;
+  text-align: center;
+}
+.DeleteModal .ButtonList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.DeleteModal .ButtonList li {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.DeleteModal .ButtonList li .ModalCloseBtn {
+  padding: 12px 0;
+  width: 84px;
+}
+.DeleteModal .ButtonList li .CancelBtn {
+  background: #fff;
+  border: 1px solid #c5c6e0;
+  border-radius: 50px;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 11px 0;
+  width: 84px;
+}
+/* Patient Delete Modal End */
+
+/* Medical Report Modal Start */
+.MedicalReportModal .modal-content {
+  max-height: 100%;
+  max-width: 992px;
+  overflow-y: auto;
+  padding: 33px 0 0;
+}
+.MedicalReportModal .modal-content::-webkit-scrollbar {
+  width: 9px;
+  margin-right: 10px;
+}
+.MedicalReportModal .modal-content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f5f5fb;
+}
+.MedicalReportModal .modal-content::-webkit-scrollbar-thumb {
+  background: #687eff;
+  border-radius: 10px;
+}
+.MedicalReportModal .modal-content::-webkit-scrollbar-thumb:hover {
+  background: #687eff;
+}
+.MedicalReportModal .modal-header {
+  border-bottom: 1px solid #c5c6e0;
+  padding-left: 55px;
+}
+.MedicalReportModal .modal-header h3 {
+  background: none;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 22px;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.MedicalReportModal .modal-header .PatientDetailsList {
+  display: flex;
+  margin-bottom: 25px;
+}
+.MedicalReportModal .modal-header .PatientDetailsList li {
+  border-right: 1px solid #c5c6e0;
+  margin-right: 24px;
+  padding-right: 24px;
+}
+.MedicalReportModal .modal-header .PatientDetailsList li:last-child {
+  border-right: none;
+}
+.MedicalReportModal .modal-header .PatientDetailsList li label {
+  color: #656288;
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.MedicalReportModal .modal-header .PatientDetailsList li .LabelValue {
+  color: #000000;
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.MedicalReportModal .MedicalReportBox {
+  border-bottom: 1px solid #c5c6e0;
+  margin-bottom: 10px;
+  padding: 17px 139px 30px 55px;
+}
+.MedicalReportModal .MedicalReportBox:last-child {
+  border-bottom: none;
+}
+.MedicalReportModal .MedicalReportBox h3 {
+  background: none;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.26px;
+  margin: 0 0 24px;
+  padding-left: 0;
+}
+.MedicalReportModal .MedicalReportBox h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.7px;
+  margin: 0 0 18px;
+}
+.MedicalReportModal .MedicalReportBox .ExaminationList {
+  margin-bottom: 40px;
+}
+.MedicalReportModal .MedicalReportBox .ExaminationList li {
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.MedicalReportModal .MedicalReportBox .ExaminationList li strong {
+  color: #000;
+  font-weight: 400;
+}
+.MedicalReportModal .MedicalReportBox .NumList {
+  padding-left: 20px;
+}
+.MedicalReportModal .MedicalReportBox .NumList li {
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  list-style: decimal;
+  margin-bottom: 5px;
+}
+.MedicalReportModal .MedicalReportBox .NumList2 {
+  padding-left: 20px;
+}
+.MedicalReportModal .MedicalReportBox .NumList2 li {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  list-style: decimal;
+  margin-bottom: 5px;
+}
+.MedicalReportModal .MedicalReportBox .NumList2 .DiscList {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+.MedicalReportModal .MedicalReportBox .NumList2 .DiscList li {
+  color: #000000;
+  font-weight: 400;
+  list-style: disc;
+  margin-bottom: 0;
+}
+.MedicalReportModal .MedicalReportBox .NumList2 .DiscList li span {
+  color: #6b7a8b;
+}
+/* Medical Report Modal End */
+
+/* Medical Report Modal Start */
+.TemplateModal .modal-content {
+  max-height: 100%;
+  max-width: 716px;
+  overflow-y: auto;
+  padding: 33px 0 0;
+}
+.TemplateModal .modal-content::-webkit-scrollbar {
+  width: 9px;
+  margin-right: 10px;
+}
+.TemplateModal .modal-content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f5f5fb;
+}
+.TemplateModal .modal-content::-webkit-scrollbar-thumb {
+  background: #687eff;
+  border-radius: 10px;
+}
+.TemplateModal .modal-content::-webkit-scrollbar-thumb:hover {
+  background: #687eff;
+}
+.TemplateModal .modal-header {
+  border-bottom: 1px solid #ccd6dd;
+  margin-bottom: 45px;
+  padding-left: 40px;
+}
+.TemplateModal .modal-header h3 {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 22px;
+}
+.TemplateModal .modal-body {
+  padding: 0 35px 30px 21px;
+}
+.TemplateModal .modal-body .template-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.TemplateModal .modal-body .template-list li {
+  padding-left: 19px;
+  padding-right: 19px;
+  margin-bottom: 38px;
+  width: 33.33333333333333%;
+}
+.TemplateModal .modal-body .template-list li h4 {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 0;
+}
+.TemplateModal .modal-body .template-list li .templateImg {
+  border: 1px solid #eaeef1;
+  margin-bottom: 13px;
+}
+.TemplateModal .modal-body .template-list li .templateImg img {
+  height: 192px;
+  width: 100%;
+}
+/* Medical Report Modal End */
+
+/* Patient Document Modal Start */
+.patientDocumentModal .modal-content {
+  background-color: #f0f2f9;
+  max-width: 856px;
+  padding: 0;
+}
+.patientDocumentModal .modal-header {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 4px 10px rgba(174, 175, 226, 0.28);
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 34px 22px 27px;
+}
+.patientDocumentModal .modal-header .modalDownloadBtn {
+  background-color: #687eff;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 19px 52px;
+}
+.patientDocumentModal .modal-header .numSec {
+  align-items: center;
+  color: #000;
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.patientDocumentModal .modal-header .numSec span {
+  border: 1px solid #eaeef1;
+  border-radius: 3px;
+  display: block;
+  margin-right: 5px;
+  padding: 4px 10px;
+}
+.patientDocumentModal .modal-header .rightHeader {
+  align-items: center;
+  display: flex;
+}
+.patientDocumentModal .modal-header .rightHeader .expandButton {
+  background: none;
+  border: none;
+  padding: 0;
+}
+.patientDocumentModal .modal-header .rightHeader .CloseButton {
+  margin-left: 14px;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+.patientDocumentModal .modal-body {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-left: 27px;
+  padding-right: 34px;
+  padding-top: 19px;
+}
+.patientDocumentModal .modal-body::-webkit-scrollbar {
+  width: 9px;
+  margin-right: 10px;
+}
+.patientDocumentModal .modal-body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f5f5fb;
+}
+.patientDocumentModal .modal-body::-webkit-scrollbar-thumb {
+  background: #687eff;
+  border-radius: 10px;
+}
+.patientDocumentModal .modal-body::-webkit-scrollbar-thumb:hover {
+  background: #687eff;
+}
+.patientDocumentModal .patientDocumentWhiteBox {
+  background-color: #fff;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 40px;
+}
+.patientDocumentModal .patientDocumentWhiteBox h3 {
+  background: none;
+  color: #000;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.7px;
+  margin: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.patientDocumentModal .patientDocumentWhiteBox h4 {
+  color: #000;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.7px;
+  margin: 0;
+}
+.patientDocumentModal .patientDocumentWhiteBox .patientDocumentList {
+  margin-bottom: 25px;
+}
+.patientDocumentModal .patientDocumentWhiteBox .patientDocumentList li {
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.patientDocumentModal .patientDocumentWhiteBox .patientDocumentList li span {
+  font-weight: 500;
+}
+.patientDocumentModal .patientDocumentWhiteBox .patientDocumentDiscList {
+  padding-left: 35px;
+}
+.patientDocumentModal .patientDocumentWhiteBox .patientDocumentDiscList li {
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  list-style: disc;
+  margin-bottom: 3px;
+}
+/* Patient Document Modal End */
+
+/* Patient Cancel Appointmnet Modal Start */
+.CancelAppointmnetModal .modal-content {
+  max-width: 594px;
+  padding: 42px 44px 42px;
+}
+.CancelAppointmnetModal .modal-header {
+  border-bottom: 1px solid #eaeef1;
+  padding-bottom: 34px;
+}
+.CancelAppointmnetModal .modal-header h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.CancelAppointmnetModal .modal-header p {
+  color: #656288;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+.CancelAppointmnetModal .modal-body {
+  padding-top: 40px;
+}
+.CancelAppointmnetModal .AddIndicatorList li {
+  margin-bottom: 31px;
+  position: relative;
+}
+.CancelAppointmnetModal .AddIndicatorList li label {
+  color: #000000;
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.CancelAppointmnetModal .AddIndicatorList li .CustomSelect {
+  background: url(assets/images/select-dropdown-arrow-icon.svg) no-repeat right 28px top 25px;
+  width: 100%;
+}
+.CancelAppointmnetModal .AddIndicatorList li .CustomSelect select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 1px solid #f0f2ff;
+  border-radius: 30px;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 19px 49px 19px 30px;
+  width: 100%;
+}
+.CancelAppointmnetModal .AddIndicatorList li .CustomSelect select:focus {
+  border-color: #4d8bf2;
+}
+.CancelAppointmnetModal .ButtonList {
+  display: flex;
+}
+.CancelAppointmnetModal .ButtonList li {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.CancelAppointmnetModal .ButtonList li .ModalCloseBtn {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 21.5px 60px;
+  width: auto;
+}
+.CancelAppointmnetModal .ButtonList li .CancelBtn {
+  background: #fff;
+  border: 1px solid #c5c6e0;
+  border-radius: 50px;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 11px 0;
+  width: 84px;
+}
+/* Patient Cancel Appointmnet Modal End */
+
+/* Patient Refer Doctor Modal Start */
+.referDoctorModal .modal-content {
+  max-width: 798px;
+  padding: 42px 0 42px;
+}
+.referDoctorModal .modal-header {
+  border-bottom: 1px solid #eaeef1;
+  padding: 0 47px 0;
+}
+.referDoctorModal .modal-header h3 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+.referDoctorModal .modal-header p {
+  color: #656288;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 28px;
+}
+.referDoctorModal .modal-body {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 23px;
+}
+.referDoctorModal .AddIndicatorList li {
+  margin-bottom: 31px;
+  position: relative;
+}
+.referDoctorModal .AddIndicatorList li .form-control {
+  background-color: #fff;
+  border: 1px solid #ccd6dd;
+  border-radius: 30px;
+  color: #6b7a8b;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 19px 30px;
+  width: 100%;
+}
+.referDoctorModal .AddIndicatorList li .form-control:focus {
+  border-color: #4d8bf2;
+}
+.referDoctorModal .search-box h4 {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 33px;
+}
+.referDoctorModal .search-list li {
+  align-items: center;
+  border-bottom: 1px solid #ccd6dd;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.referDoctorModal .search-list li .profile-box {
+  display: flex;
+}
+.referDoctorModal .search-list li .profile-box .header-sec h5 {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.33px;
+  margin-bottom: 4px;
+}
+.referDoctorModal .search-list li .profile-box .header-sec p {
+  color: #5087fa;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.78px;
+  margin-bottom: 0;
+}
+.referDoctorModal .search-list li .ModalCloseBtn {
+  padding: 10px 20px;
+  width: auto;
+}
+/* Patient Refer Doctor Modal End */
+
+/*~~~~~~~~~~~~~ Modal Style End ~~~~~~~~~~~~~*/
+
+/************************** Doctor Consultation Observations End(12/08/24) **************************/
+
+// Nanai's css end
+
+.DoctorHero {
+  width: 100%;
+  padding: 150px 0 450px 0;
+  margin-top: -118px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.DoctorHeroContainer {
+  max-width: 1350px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.DoctorHeroLft {
+  width: 55%;
+  padding-top: 85px;
+}
+.DoctorHeroLft h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  margin: 25px 0;
+  color: #fff;
+}
+.DoctorHeroLft h5 a {
+  color: #a7dbff;
+}
+.DoctorHeroLft ul li {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  padding: 0;
+  color: #fff;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 0 25px 0;
+}
+.DoctorHeroLft ul li img {
+  margin: 0 10px 0 0;
+}
+
+.DoctorHeroLft h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33px;
+  padding: 0;
+  color: #fff;
+  margin: 0 0 28px 0;
+}
+.DoctorHeroRgt {
+  width: 45%;
+}
+.WBox {
+  width: 90%;
+  border-radius: 20px;
+  padding: 32px 5% 0;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px 0px #aeafe21f;
+}
+.WBox h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0 0 25px;
+  color: #000;
+}
+.WBox p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0 0 25px;
+  color: #000;
+}
+.WBox ul {
+  display: flex;
+  gap: 15px 15px;
+  flex-wrap: wrap;
+}
+.WBox ul li {
+  width: 48%;
+}
+.WBox ul li:nth-child(5) {
+  width: 100%;
+}
+.WBox ul li:nth-child(6) {
+  width: 100%;
+}
+.WBox ul li:nth-child(7) {
+  width: 100%;
+}
+.WBox ul li:nth-child(8) {
+  width: 100%;
+}
+.WBox ul li:nth-child(9) {
+  width: 100%;
+}
+.WBox ul li:last-child {
+  width: 100%;
+}
+
+.WBox ul li input.WBoxinput {
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6b7a8b;
+  border: 1px solid #eaeef1;
+  padding: 18px 25px;
+  box-shadow: 0px 10px 20px 0px rgba(174, 175, 226, 0.1215686275);
+  outline: none !important;
+  background: #fff;
+  height: 58px;
+  border-radius: 30px;
+}
+
+.WBox ul li .select-style {
+  overflow: hidden;
+  background-color: #fff;
+  background-image: url(./assets/images/downarrow.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  height: 61px;
+  box-shadow: 0px 10px 20px 0px #aeafe21f;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.WBox ul li .select-style select {
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6b7a8b;
+  border: 1px solid #eaeef1;
+  padding: 18px 25px;
+  outline: none !important;
+  background: transparent;
+  height: 61px;
+  border-radius: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.WBox ul li .select-style select:focus {
+  outline: none;
+}
+.WBox ul li:nth-child(5) {
+  width: 100%;
+}
+.WBox ul li:nth-child(6) input.WBoxinput {
+  width: 90%;
+}
+.WBox ul li:nth-child(7) input.WBoxinput {
+  width: 90%;
+}
+.WBox ul li:nth-child(8) input.WBoxinput {
+  width: 90%;
+}
+.WBox ul li:last-child {
+  width: 100%;
+}
+
+.WBox ul li .WBNext {
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.WBox ul li .WBNext:hover {
+  background: linear-gradient(101.45deg, #4d8bf2 13.92%, #4ba9e9 71.82%);
+}
+.WBox ul li input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.WBox ul li label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #656288;
+  text-align: left;
+}
+
+.WBox ul li input[type="checkbox"] {
+  width: 24px; /* Adjust width */
+  height: 24px; /* Adjust height */
+  margin-right: 10px;
+  appearance: none; /* Remove default styling */
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.WBox ul li input[type="checkbox"]:checked {
+  background-color: rgba(104, 126, 255, 1); /* Change active color */
+  border-color: rgba(104, 126, 255, 1);
+}
+
+.WBox ul li input[type="checkbox"]:checked::after {
+  background-image: url(./assets/images/checktick.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+}
+
+.WBox ul li input.WBoxinput.doneInput {
+  background-image: url(./assets/images/tickGreen.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
+.DiscoverDiv {
+  width: 100%;
+  padding: 400px 0 0;
+}
+.DiscoverDiv h4 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  margin: 0 0 35px;
+  color: #000;
+}
+.DiscoverTabLink {
+  width: 100%;
+  border-bottom: 1px solid #c5c6e0;
+  display: flex;
+  justify-content: center;
+}
+.DiscoverTabLink li {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+  padding: 20px 25px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+.DiscoverTabLink li.active {
+  color: #687eff;
+  font-weight: 500;
+  border-bottom: 2px solid #687eff;
+}
+.DiscoverList ul {
+  display: flex;
+  gap: 30px;
+}
+
+.DiscoverList ul li {
+  width: 33.33%;
+}
+.DiscoverBlock {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.DiscoverList ul li .DiscoverBox {
+  width: 100%;
+  border-radius: 8px;
+}
+.DiscoverList ul li .DiscoverBox .DiscoverBoxImg {
+  width: 100%;
+  height: auto;
+  line-height: 0;
+}
+.DiscoverList ul li .DiscoverBox .DiscoverBoxImg img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+.DiscoverList ul li .DiscoverBox .DiscoverBoxTXt {
+  background-color: #2f2d46;
+  padding: 22px 30px 30px;
+  height: 165px;
+  border-radius: 0 0 8px 8px;
+}
+.DiscoverList ul li .DiscoverBox .DiscoverBoxTXt h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #fff;
+  margin: 0 0 8px 0;
+}
+.DiscoverList ul li .DiscoverBox .DiscoverBoxTXt p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #cfdbe8;
+  margin: 0 0 0 0;
+}
+.DiscoverDiv .ViewButton:hover {
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+  border: 1px solid #378ce7;
+  color: #fff;
+}
+.PlanDiv {
+  width: 100%;
+  padding: 80px 0;
+}
+.PlanDivContainer {
+  max-width: 1160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.PlanDiv h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #000000;
+  margin: 0 0 60px 0;
+  text-align: center;
+}
+.PlanDiv ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.PlanDiv ul li {
+  width: 33.33%;
+}
+
+.planlist {
+  width: 100%;
+}
+.planlist ul {
+  width: 100%;
+  display: block;
+}
+.planBox {
+  box-shadow: 0px 20px 20px 0px #aeafe21f;
+  border: 1px solid #aeafe21f;
+  width: 100%;
+  padding: 57px 40px 54px 40px;
+  gap: 0px;
+  border-radius: 20px;
+}
+.planBox h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #687eff;
+  margin: 0 0 20px;
+}
+.planBox h3 {
+  width: 100%;
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  color: #000;
+  margin: 0 0 25px 0;
+  border-bottom: 1px solid #ccd6dd;
+  padding-bottom: 25px;
+}
+.planBox h3 span {
+  border-left: 1px solid #ccd6dd;
+  margin-left: 15px;
+  padding-left: 15px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+}
+.planBox p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6b7a8b;
+  margin: 0 0 20px;
+}
+.planlist {
+  width: 100%;
+  border-top: 1px solid #ccd6dd;
+  padding: 30px 0 0;
+}
+.planlist h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #000000;
+  margin: 0 0 30px;
+  text-align: left;
+}
+.planlist ul li {
+  background-image: url(./assets/images/calendarBlue.svg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #656288;
+  width: 100%;
+  padding-left: 35px;
+  margin-bottom: 15px;
+}
+
+.planlist .buyBtn {
+  background-color: transparent;
+  border: 1px solid #378ce7;
+  padding: 17px 32px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #378ce7;
+  box-shadow: none;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 185px;
+  height: 53px;
+  margin: 0 auto;
+  margin-top: 45px;
+  display: block;
+}
+.planlist .buyBtn:hover {
+  background: linear-gradient(101.45deg, #4ba9e9 13.92%, #4d8bf2 71.82%);
+  border: 1px solid #378ce7;
+  color: #fff;
+}
+
+.JoditEditorContentWrapper {
+  position: relative !important;
+}
+
+.EmojiPickerWrapper {
+  position: absolute !important;
+  right: 0;
+  top: 75px;
+  z-index: 9;
+}
+
+.jodit-status-bar {
+  display: none !important;
+}
+
+.jodit-add-new-line {
+  display: none !important;
+}

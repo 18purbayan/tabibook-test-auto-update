@@ -1,0 +1,67 @@
+.testimonials-carousel {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 45px;
+}
+
+.testimonial-item {
+  padding: 20px;
+}
+
+.testimonial-text {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  padding: 0;
+  color: #4d4d4d;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.testimonial-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: inline-block !important;
+}
+
+.testimonial-name {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000;
+  margin-left: 15px;
+}
+
+.testimonial-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.testimonials-carousel .slick-arrow.slick-next {
+  width: 55px;
+  height: 53px;
+  background-image: url(../assets/images/RgtArrow2.svg);
+  background-repeat: no-repeat;
+  z-index: 99;
+}
+
+.testimonials-carousel .slick-arrow.slick-prev {
+  width: 55px;
+  height: 53px;
+  background-image: url(../assets/images/LeftArrow2.svg);
+  background-repeat: no-repeat;
+  z-index: 99;
+}
+
+.testimonials-carousel .slick-next:before,
+.testimonials-carousel .slick-prev:before {
+  display: none;
+}
