@@ -64,7 +64,7 @@ const Header = props => {
                   </li>
                   <li>
                     <Link>
-                      <img src={Help} className="helpIcon" alt="icon" /> Help Center
+                      <img src={Help} className="helpIcon" alt="icon" /> Help Center purbayan
                     </Link>
                   </li>
                   <li>
